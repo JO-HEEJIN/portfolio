@@ -9,11 +9,10 @@
       "category": "AR_VR",
       "tags": ["SwiftUI", "RealityKit", "ARKit", "Vision Pro", "3D"],
       "year": 2025,
-      "thumbnail": "/images/projects/mars-trainer-thumb.jpg",
+      "thumbnail": "/images/projects/mars-trainer-2.png",
       "images": [
         "/images/projects/mars-trainer-1.png",
-        "/images/projects/mars-trainer-2.png",
-        "/images/projects/mars-trainer-3.jpg"
+        "/images/projects/mars-trainer-2.png"
       ],
       "videoUrl": "https://youtube.com/...",
       "liveDemo": null,

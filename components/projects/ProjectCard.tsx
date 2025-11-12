@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Project } from "@/lib/types";
 import { CATEGORY_LABELS, CATEGORY_COLORS } from "@/lib/constants";
 
@@ -11,15 +11,21 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const router = useRouter();
+
+  const handleCardClick = () => {
+    router.push(`/projects/${project.id}`);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+      className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+      onClick={handleCardClick}
     >
-      <Link href={`/projects/${project.id}`} className="block">
         {/* Project Image */}
         <div className="relative h-64 overflow-hidden bg-gray-200 dark:bg-gray-700">
           <Image
@@ -103,7 +109,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
             )}
           </div>
         </div>
-      </Link>
     </motion.div>
   );
 }
