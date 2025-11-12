@@ -1,0 +1,18 @@
+Placeholder for project images.
+
+Add your project images in the following structure:
+/public/images/projects/
+  - mars-trainer-thumb.jpg
+  - mars-trainer-1.jpg
+  - mars-trainer-2.jpg
+  - kisan-ai-thumb.jpg
+  - etc.
+
+You can use tools like:
+- Screenshot your actual projects
+- Use Figma mockups
+- Generate placeholder images from https://placeholder.com or https://picsum.photos
+
+Recommended image sizes:
+- Thumbnails: 800x600px
+- Detail images: 1200x800px

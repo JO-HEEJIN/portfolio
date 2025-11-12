@@ -1,0 +1,425 @@
+{
+  "projects": [
+    {
+      "id": "vision-pro-mars-trainer",
+      "title": "Vision Pro Mars Trainer",
+      "subtitle": "Immersive AR Training for NASA Space Apps Challenge",
+      "description": "Interactive AR training simulator for Mars surface operations using Apple Vision Pro",
+      "longDescription": "Developed an immersive AR training application for NASA Space Apps Challenge 2025, enabling astronauts to practice Mars surface operations in mixed reality. The application combines real-time spatial mapping, hand tracking, and realistic physics simulation to create an authentic training environment.",
+      "category": "AR_VR",
+      "tags": ["SwiftUI", "RealityKit", "ARKit", "Vision Pro", "3D"],
+      "year": 2025,
+      "thumbnail": "/images/projects/mars-trainer-thumb.jpg",
+      "images": [
+        "/images/projects/mars-trainer-1.jpg",
+        "/images/projects/mars-trainer-2.jpg",
+        "/images/projects/mars-trainer-3.jpg"
+      ],
+      "videoUrl": "https://youtube.com/...",
+      "liveDemo": null,
+      "githubUrl": "https://github.com/yourusername/mars-trainer",
+      "highlights": [
+        "Winner of NASA Space Apps Challenge 2025 Regional Category",
+        "Real-time spatial mapping and hand gesture recognition",
+        "Realistic Mars environment with accurate terrain data",
+        "Multi-user collaborative training sessions"
+      ],
+      "techStack": [
+        {
+          "name": "Swift",
+          "icon": "swift",
+          "url": "https://swift.org"
+        },
+        {
+          "name": "SwiftUI",
+          "icon": "swiftui",
+          "url": "https://developer.apple.com/xcode/swiftui/"
+        },
+        {
+          "name": "RealityKit",
+          "icon": "realitykit",
+          "url": "https://developer.apple.com/augmented-reality/realitykit/"
+        },
+        {
+          "name": "ARKit",
+          "icon": "arkit",
+          "url": "https://developer.apple.com/arkit/"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Training Accuracy",
+          "value": "95",
+          "unit": "%"
+        },
+        {
+          "label": "User Satisfaction",
+          "value": "4.8",
+          "unit": "/5"
+        }
+      ],
+      "awards": ["NASA Space Apps Challenge 2025 Winner"]
+    },
+    {
+      "id": "kisan-ai",
+      "title": "KisanAI",
+      "subtitle": "AR-Powered Agricultural Assistant for Indian Farmers",
+      "description": "Real-world AR platform with ChatGPT integration for precision agriculture",
+      "longDescription": "Comprehensive agricultural platform combining real-world AR visualization with AI-powered crop management. Features include disease detection, yield prediction, weather integration, and multilingual support for Indian farmers. Built for NASA Space Apps Challenge 2025.",
+      "category": "AI_ML",
+      "tags": ["React Native", "TensorFlow", "AR", "ChatGPT", "Agriculture"],
+      "year": 2025,
+      "thumbnail": "/images/projects/kisan-ai-thumb.jpg",
+      "images": [
+        "/images/projects/kisan-ai-1.jpg",
+        "/images/projects/kisan-ai-2.jpg",
+        "/images/projects/kisan-ai-3.jpg"
+      ],
+      "videoUrl": "https://youtube.com/...",
+      "liveDemo": "https://kisanai.app",
+      "githubUrl": "https://github.com/yourusername/kisanai",
+      "highlights": [
+        "Real-world AR overlay for crop health visualization",
+        "AI-powered disease detection with 93% accuracy",
+        "Integration with OpenAI GPT-4 for farming advice",
+        "Support for 15+ Indian languages",
+        "Weather-based yield predictions"
+      ],
+      "techStack": [
+        {
+          "name": "React Native",
+          "icon": "react",
+          "url": "https://reactnative.dev"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow",
+          "url": "https://tensorflow.org"
+        },
+        {
+          "name": "OpenAI",
+          "icon": "openai",
+          "url": "https://openai.com"
+        },
+        {
+          "name": "ARCore",
+          "icon": "arcore",
+          "url": "https://developers.google.com/ar"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Disease Detection Accuracy",
+          "value": "93",
+          "unit": "%"
+        },
+        {
+          "label": "Active Farmers",
+          "value": "5000",
+          "unit": "+"
+        }
+      ]
+    },
+    {
+      "id": "ai-music-generation",
+      "title": "AI Music Generation App",
+      "subtitle": "Text-to-Music with Real-time Visualization",
+      "description": "AI-powered music generation platform with 3D audio visualization",
+      "longDescription": "Innovative music generation platform leveraging Meta's MusicGen model to create original compositions from text prompts. Features include real-time 3D audio visualization, MIDI export, and style transfer capabilities.",
+      "category": "AI_ML",
+      "tags": ["Python", "PyTorch", "React", "Three.js", "MusicGen"],
+      "year": 2024,
+      "thumbnail": "/images/projects/music-gen-thumb.jpg",
+      "images": [
+        "/images/projects/music-gen-1.jpg",
+        "/images/projects/music-gen-2.jpg",
+        "/images/projects/music-gen-3.jpg"
+      ],
+      "videoUrl": "https://youtube.com/...",
+      "liveDemo": "https://musicgen.demo.com",
+      "githubUrl": "https://github.com/yourusername/ai-music-gen",
+      "highlights": [
+        "Text-to-music generation using Meta's MusicGen",
+        "Real-time 3D audio visualization with Three.js",
+        "MIDI export for music production software",
+        "Style transfer between different genres",
+        "Collaborative playlist creation"
+      ],
+      "techStack": [
+        {
+          "name": "Python",
+          "icon": "python",
+          "url": "https://python.org"
+        },
+        {
+          "name": "PyTorch",
+          "icon": "pytorch",
+          "url": "https://pytorch.org"
+        },
+        {
+          "name": "React",
+          "icon": "react",
+          "url": "https://react.dev"
+        },
+        {
+          "name": "Three.js",
+          "icon": "threejs",
+          "url": "https://threejs.org"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Generations",
+          "value": "10K",
+          "unit": "+"
+        },
+        {
+          "label": "Avg. Generation Time",
+          "value": "8",
+          "unit": "s"
+        }
+      ]
+    },
+    {
+      "id": "birth2death",
+      "title": "Birth2Death",
+      "subtitle": "ADHD Life Management with Gamification",
+      "description": "iOS app helping ADHD users manage life through gamification and AI coaching",
+      "longDescription": "Comprehensive life management platform designed specifically for individuals with ADHD. Features include task gamification with collectible characters, AI-powered habit coaching, time-boxing with gentle reminders, and progress visualization. Built with SwiftUI and integrated with GPT-4 for personalized guidance.",
+      "category": "HEALTHCARE",
+      "tags": ["SwiftUI", "iOS", "HealthKit", "GPT-4", "Gamification"],
+      "year": 2024,
+      "thumbnail": "/images/projects/birth2death-thumb.jpg",
+      "images": [
+        "/images/projects/birth2death-1.jpg",
+        "/images/projects/birth2death-2.jpg",
+        "/images/projects/birth2death-3.jpg"
+      ],
+      "videoUrl": "https://youtube.com/...",
+      "liveDemo": null,
+      "githubUrl": "https://github.com/yourusername/birth2death",
+      "highlights": [
+        "Gamified task management with collectible 3D characters",
+        "AI-powered habit coaching using GPT-4",
+        "Gentle time-boxing with non-intrusive reminders",
+        "Progress visualization and analytics",
+        "Integration with Apple HealthKit"
+      ],
+      "techStack": [
+        {
+          "name": "Swift",
+          "icon": "swift",
+          "url": "https://swift.org"
+        },
+        {
+          "name": "SwiftUI",
+          "icon": "swiftui",
+          "url": "https://developer.apple.com/xcode/swiftui/"
+        },
+        {
+          "name": "SceneKit",
+          "icon": "scenekit",
+          "url": "https://developer.apple.com/scenekit/"
+        },
+        {
+          "name": "OpenAI",
+          "icon": "openai",
+          "url": "https://openai.com"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Task Completion Rate",
+          "value": "78",
+          "unit": "%"
+        },
+        {
+          "label": "User Engagement",
+          "value": "4.7",
+          "unit": "/5"
+        }
+      ]
+    },
+    {
+      "id": "getn-show",
+      "title": "GetnShow",
+      "subtitle": "Interactive Story Platform with Real-time Collaboration",
+      "description": "Platform for creating and sharing interactive web experiences",
+      "longDescription": "Modern web platform enabling creators to build and share interactive storytelling experiences. Features real-time collaboration, rich media embedding, analytics, and monetization tools. Built with Next.js 14 and optimized for performance.",
+      "category": "WEB",
+      "tags": ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
+      "year": 2024,
+      "thumbnail": "/images/projects/getn-show-thumb.jpg",
+      "images": [
+        "/images/projects/getn-show-1.jpg",
+        "/images/projects/getn-show-2.jpg",
+        "/images/projects/getn-show-3.jpg"
+      ],
+      "videoUrl": null,
+      "liveDemo": "https://www.getn.show",
+      "githubUrl": null,
+      "highlights": [
+        "Real-time collaborative editing",
+        "Rich media support (video, audio, 3D)",
+        "Performance-optimized with Next.js 14",
+        "Built-in analytics and engagement metrics",
+        "Creator monetization tools"
+      ],
+      "techStack": [
+        {
+          "name": "Next.js",
+          "icon": "nextjs",
+          "url": "https://nextjs.org"
+        },
+        {
+          "name": "React",
+          "icon": "react",
+          "url": "https://react.dev"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "typescript",
+          "url": "https://typescriptlang.org"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "tailwind",
+          "url": "https://tailwindcss.com"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Page Load Time",
+          "value": "1.2",
+          "unit": "s"
+        },
+        {
+          "label": "Lighthouse Score",
+          "value": "98",
+          "unit": "/100"
+        }
+      ]
+    },
+    {
+      "id": "agricultural-ar",
+      "title": "Agricultural AR Platform",
+      "subtitle": "NASA Space Apps Challenge Submission",
+      "description": "Complete agricultural platform with AR crop visualization",
+      "longDescription": "Comprehensive agricultural management platform developed for NASA Space Apps Challenge 2025. Combines satellite imagery, weather data, AR visualization, and AI-powered recommendations to help farmers optimize crop yields and reduce resource waste.",
+      "category": "AR_VR",
+      "tags": ["AR", "Agriculture", "Satellite", "AI", "NASA"],
+      "year": 2025,
+      "thumbnail": "/images/projects/agri-ar-thumb.jpg",
+      "images": [
+        "/images/projects/agri-ar-1.jpg",
+        "/images/projects/agri-ar-2.jpg",
+        "/images/projects/agri-ar-3.jpg"
+      ],
+      "videoUrl": "https://youtube.com/...",
+      "liveDemo": "https://agri-ar.demo.com",
+      "githubUrl": "https://github.com/yourusername/agri-ar",
+      "highlights": [
+        "Integration with NASA satellite data",
+        "Real-time AR crop health visualization",
+        "Weather forecasting and alerts",
+        "AI-powered irrigation recommendations",
+        "Crop yield predictions"
+      ],
+      "techStack": [
+        {
+          "name": "React Native",
+          "icon": "react",
+          "url": "https://reactnative.dev"
+        },
+        {
+          "name": "ARCore",
+          "icon": "arcore",
+          "url": "https://developers.google.com/ar"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow",
+          "url": "https://tensorflow.org"
+        },
+        {
+          "name": "NASA APIs",
+          "icon": "nasa",
+          "url": "https://api.nasa.gov"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Yield Improvement",
+          "value": "25",
+          "unit": "%"
+        },
+        {
+          "label": "Water Savings",
+          "value": "30",
+          "unit": "%"
+        }
+      ],
+      "awards": ["NASA Space Apps Challenge 2025 Finalist"]
+    },
+    {
+      "id": "skin-burn-ai",
+      "title": "Skin Burn AI Classification",
+      "subtitle": "Medical AI for Burn Severity Assessment",
+      "description": "Deep learning model for automated burn severity classification",
+      "longDescription": "Medical AI application using convolutional neural networks to classify burn severity from images. Assists healthcare professionals in rapid triage and treatment planning. Trained on diverse medical datasets with 96% classification accuracy.",
+      "category": "AI_ML",
+      "tags": ["Python", "TensorFlow", "Medical AI", "CNN", "Healthcare"],
+      "year": 2024,
+      "thumbnail": "/images/projects/burn-ai-thumb.jpg",
+      "images": [
+        "/images/projects/burn-ai-1.jpg",
+        "/images/projects/burn-ai-2.jpg",
+        "/images/projects/burn-ai-3.jpg"
+      ],
+      "videoUrl": null,
+      "liveDemo": null,
+      "githubUrl": "https://github.com/yourusername/burn-ai",
+      "highlights": [
+        "96% classification accuracy for burn severity",
+        "Real-time inference on mobile devices",
+        "HIPAA-compliant data handling",
+        "Integration with hospital EHR systems",
+        "Multi-class burn severity classification"
+      ],
+      "techStack": [
+        {
+          "name": "Python",
+          "icon": "python",
+          "url": "https://python.org"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "tensorflow",
+          "url": "https://tensorflow.org"
+        },
+        {
+          "name": "Keras",
+          "icon": "keras",
+          "url": "https://keras.io"
+        },
+        {
+          "name": "Flask",
+          "icon": "flask",
+          "url": "https://flask.palletsprojects.com"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Classification Accuracy",
+          "value": "96",
+          "unit": "%"
+        },
+        {
+          "label": "Inference Time",
+          "value": "0.3",
+          "unit": "s"
+        }
+      ]
+    }
+  ]
+}

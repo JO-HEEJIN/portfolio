@@ -1,0 +1,155 @@
+{
+  "skillCategories": [
+    {
+      "name": "AR/VR Development",
+      "skills": [
+        {
+          "name": "SwiftUI & RealityKit",
+          "level": 90,
+          "icon": "swiftui",
+          "category": "AR/VR"
+        },
+        {
+          "name": "ARKit & Vision Pro",
+          "level": 85,
+          "icon": "arkit",
+          "category": "AR/VR"
+        },
+        {
+          "name": "Three.js & WebGL",
+          "level": 88,
+          "icon": "threejs",
+          "category": "AR/VR"
+        },
+        {
+          "name": "React Three Fiber",
+          "level": 82,
+          "icon": "react",
+          "category": "AR/VR"
+        },
+        {
+          "name": "ARCore",
+          "level": 75,
+          "icon": "arcore",
+          "category": "AR/VR"
+        }
+      ]
+    },
+    {
+      "name": "AI & Machine Learning",
+      "skills": [
+        {
+          "name": "TensorFlow & PyTorch",
+          "level": 85,
+          "icon": "tensorflow",
+          "category": "AI/ML"
+        },
+        {
+          "name": "OpenAI GPT Integration",
+          "level": 92,
+          "icon": "openai",
+          "category": "AI/ML"
+        },
+        {
+          "name": "Computer Vision",
+          "level": 80,
+          "icon": "cv",
+          "category": "AI/ML"
+        },
+        {
+          "name": "NLP & LLMs",
+          "level": 88,
+          "icon": "nlp",
+          "category": "AI/ML"
+        }
+      ]
+    },
+    {
+      "name": "Web Development",
+      "skills": [
+        {
+          "name": "Next.js & React",
+          "level": 95,
+          "icon": "nextjs",
+          "category": "Web"
+        },
+        {
+          "name": "TypeScript",
+          "level": 90,
+          "icon": "typescript",
+          "category": "Web"
+        },
+        {
+          "name": "Tailwind CSS",
+          "level": 92,
+          "icon": "tailwind",
+          "category": "Web"
+        },
+        {
+          "name": "Node.js & Express",
+          "level": 85,
+          "icon": "nodejs",
+          "category": "Web"
+        },
+        {
+          "name": "GraphQL & REST APIs",
+          "level": 88,
+          "icon": "graphql",
+          "category": "Web"
+        }
+      ]
+    },
+    {
+      "name": "Mobile Development",
+      "skills": [
+        {
+          "name": "Swift & SwiftUI",
+          "level": 90,
+          "icon": "swift",
+          "category": "Mobile"
+        },
+        {
+          "name": "React Native",
+          "level": 85,
+          "icon": "react",
+          "category": "Mobile"
+        },
+        {
+          "name": "iOS Development",
+          "level": 88,
+          "icon": "ios",
+          "category": "Mobile"
+        }
+      ]
+    },
+    {
+      "name": "Tools & Technologies",
+      "skills": [
+        {
+          "name": "Git & GitHub",
+          "level": 92,
+          "icon": "git",
+          "category": "Tools"
+        },
+        {
+          "name": "Docker & CI/CD",
+          "level": 80,
+          "icon": "docker",
+          "category": "Tools"
+        },
+        {
+          "name": "Figma & Design",
+          "level": 85,
+          "icon": "figma",
+          "category": "Tools"
+        },
+        {
+          "name": "AWS & Cloud Services",
+          "level": 78,
+          "icon": "aws",
+          "category": "Tools"
+        }
+      ]
+    }
+  ]
+}
