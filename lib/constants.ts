@@ -5,9 +5,9 @@ export const SITE_CONFIG = {
   url: "https://heejinjo.com", // Update with actual domain
   author: {
     name: "Heejin Jo",
-    email: "hello@heejinjo.com", // Update with actual email
-    github: "https://github.com/yourusername", // Update
-    linkedin: "https://linkedin.com/in/yourprofile", // Update
+    email: "info@birth2death.com", // Update with actual email
+    github: "https://github.com/JO-HEEJIN", // Update
+    linkedin: "https://linkedin.com/in/m0i0d", // Update
   },
 } as const;
 

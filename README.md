@@ -5,7 +5,7 @@ A modern, interactive portfolio website showcasing AR/VR, AI/ML, and web develop
 ## 🚀 Features
 
 - **Interactive 3D Hero**: Stunning Three.js animated hero section with particle effects
-- **Project Showcase**: Comprehensive portfolio with 7 featured projects
+- **Project Showcase**: Comprehensive portfolio with 8 featured projects
 - **Responsive Design**: Mobile-first, fully responsive across all devices
 - **Modern Tech Stack**: Next.js 14, React 18, TypeScript, Tailwind CSS
 - **Performance Optimized**: <3s load time, Lighthouse score 95+
@@ -13,13 +13,14 @@ A modern, interactive portfolio website showcasing AR/VR, AI/ML, and web develop
 
 ## 📋 Projects Featured
 
-1. **Vision Pro Mars Trainer** - NASA Space Apps Challenge Winner
-2. **KisanAI** - AR Agricultural Platform with ChatGPT
+1. **Vision Pro Mars Trainer** - Immersive AR Training for Mars Operations
+2. **KisanAI** - NASA Space Apps Challenge 2025 Winner 🏆
 3. **AI Music Generation** - Text-to-music with 3D visualization
 4. **Birth2Death** - ADHD Life Management App
 5. **GetnShow** - Interactive Story Platform
 6. **Agricultural AR** - NASA Space Apps Finalist
 7. **Skin Burn AI** - Medical AI Classification
+8. **Niaverse Funding Platform** - Decentralized Web3 Crowdfunding
 
 ## 🛠️ Tech Stack
 
@@ -143,8 +144,8 @@ MIT License - feel free to use this as a template for your own portfolio!
 
 **Heejin Jo**
 - Portfolio: [heejinjo.com](https://heejinjo.com)
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
+- GitHub: [@JO-HEEJIN](https://github.com/JO-HEEJIN)
+- LinkedIn: [m0i0d](https://linkedin.com/in/m0i0d)
 
 ## 🙏 Acknowledgments
 

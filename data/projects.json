@@ -11,18 +11,18 @@
       "year": 2025,
       "thumbnail": "/images/projects/mars-trainer-thumb.jpg",
       "images": [
-        "/images/projects/mars-trainer-1.jpg",
-        "/images/projects/mars-trainer-2.jpg",
+        "/images/projects/mars-trainer-1.png",
+        "/images/projects/mars-trainer-2.png",
         "/images/projects/mars-trainer-3.jpg"
       ],
       "videoUrl": "https://youtube.com/...",
       "liveDemo": null,
-      "githubUrl": "https://github.com/yourusername/mars-trainer",
+      "githubUrl": "https://github.com/JO-HEEJIN/mars-trainer",
       "highlights": [
-        "Winner of NASA Space Apps Challenge 2025 Regional Category",
         "Real-time spatial mapping and hand gesture recognition",
         "Realistic Mars environment with accurate terrain data",
-        "Multi-user collaborative training sessions"
+        "Multi-user collaborative training sessions",
+        "Interactive 3D models with physics simulation"
       ],
       "techStack": [
         {
@@ -57,8 +57,7 @@
           "value": "4.8",
           "unit": "/5"
         }
-      ],
-      "awards": ["NASA Space Apps Challenge 2025 Winner"]
+      ]
     },
     {
       "id": "kisan-ai",
@@ -77,8 +76,9 @@
       ],
       "videoUrl": "https://youtube.com/...",
       "liveDemo": "https://kisanai.app",
-      "githubUrl": "https://github.com/yourusername/kisanai",
+      "githubUrl": "https://github.com/JO-HEEJIN/kisanai",
       "highlights": [
+        "Winner of NASA Space Apps Challenge 2025",
         "Real-world AR overlay for crop health visualization",
         "AI-powered disease detection with 93% accuracy",
         "Integration with OpenAI GPT-4 for farming advice",
@@ -118,7 +118,8 @@
           "value": "5000",
           "unit": "+"
         }
-      ]
+      ],
+      "awards": ["NASA Space Apps Challenge 2025 Winner"]
     },
     {
       "id": "ai-music-generation",
@@ -137,7 +138,7 @@
       ],
       "videoUrl": "https://youtube.com/...",
       "liveDemo": "https://musicgen.demo.com",
-      "githubUrl": "https://github.com/yourusername/ai-music-gen",
+      "githubUrl": "https://github.com/JO-HEEJIN/ai-music-gen",
       "highlights": [
         "Text-to-music generation using Meta's MusicGen",
         "Real-time 3D audio visualization with Three.js",
@@ -197,7 +198,7 @@
       ],
       "videoUrl": "https://youtube.com/...",
       "liveDemo": null,
-      "githubUrl": "https://github.com/yourusername/birth2death",
+      "githubUrl": "https://github.com/JO-HEEJIN/birth2death",
       "highlights": [
         "Gamified task management with collectible 3D characters",
         "AI-powered habit coaching using GPT-4",
@@ -317,7 +318,7 @@
       ],
       "videoUrl": "https://youtube.com/...",
       "liveDemo": "https://agri-ar.demo.com",
-      "githubUrl": "https://github.com/yourusername/agri-ar",
+      "githubUrl": "https://github.com/JO-HEEJIN/agri-ar",
       "highlights": [
         "Integration with NASA satellite data",
         "Real-time AR crop health visualization",
@@ -378,7 +379,7 @@
       ],
       "videoUrl": null,
       "liveDemo": null,
-      "githubUrl": "https://github.com/yourusername/burn-ai",
+      "githubUrl": "https://github.com/JO-HEEJIN/burn-ai",
       "highlights": [
         "96% classification accuracy for burn severity",
         "Real-time inference on mobile devices",
@@ -418,6 +419,72 @@
           "label": "Inference Time",
           "value": "0.3",
           "unit": "s"
+        }
+      ]
+    },
+    {
+      "id": "niaverse-funding",
+      "title": "Niaverse Funding Platform",
+      "subtitle": "Decentralized Crowdfunding for Creative Projects",
+      "description": "Web3-powered crowdfunding platform enabling transparent project funding with blockchain technology",
+      "longDescription": "Niaverse is a decentralized funding platform built on blockchain technology, enabling creators to launch campaigns and receive funding transparently. Features include smart contract-based fund management, NFT rewards for backers, milestone-based fund release, and comprehensive project analytics. Built with modern web technologies and integrated with Ethereum blockchain.",
+      "category": "BLOCKCHAIN",
+      "tags": ["Next.js", "Web3", "Ethereum", "Smart Contracts", "TypeScript"],
+      "year": 2024,
+      "thumbnail": "/images/projects/niaverse-thumb.jpg",
+      "images": [
+        "/images/projects/niaverse-1.jpg",
+        "/images/projects/niaverse-2.jpg",
+        "/images/projects/niaverse-3.jpg"
+      ],
+      "videoUrl": null,
+      "liveDemo": "https://niaverse.org",
+      "githubUrl": "https://github.com/JO-HEEJIN/niaverse-funding-platform",
+      "highlights": [
+        "Decentralized crowdfunding with smart contracts",
+        "NFT-based rewards system for backers",
+        "Milestone-based fund release mechanism",
+        "Real-time project analytics dashboard",
+        "Transparent on-chain transaction history",
+        "Multi-wallet support (MetaMask, WalletConnect)"
+      ],
+      "techStack": [
+        {
+          "name": "Next.js",
+          "icon": "nextjs",
+          "url": "https://nextjs.org"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "typescript",
+          "url": "https://typescriptlang.org"
+        },
+        {
+          "name": "Ethereum",
+          "icon": "ethereum",
+          "url": "https://ethereum.org"
+        },
+        {
+          "name": "Solidity",
+          "icon": "solidity",
+          "url": "https://soliditylang.org"
+        },
+        {
+          "name": "Web3.js",
+          "icon": "web3",
+          "url": "https://web3js.org"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Total Campaigns",
+          "value": "150",
+          "unit": "+"
+        },
+        {
+          "label": "Funds Raised",
+          "value": "$2M",
+          "unit": "+"
         }
       ]
     }
