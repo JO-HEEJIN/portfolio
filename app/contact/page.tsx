@@ -1,3 +1,5 @@
+import { SITE_CONFIG } from "@/lib/constants";
+
 export default function ContactPage() {
   return (
     <main className="min-h-screen pt-24 pb-16">
@@ -24,7 +26,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Email */}
             <a
-              href="mailto:hello@heejinjo.com"
+              href={`mailto:${SITE_CONFIG.author.email}`}
               className="flex items-center gap-4 p-6 bg-gray-50 dark:bg-gray-700 rounded-xl hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors group"
             >
               <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -34,13 +36,13 @@ export default function ContactPage() {
               </div>
               <div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Email</div>
-                <div className="text-lg font-semibold text-gray-900 dark:text-gray-100">hello@heejinjo.com</div>
+                <div className="text-lg font-semibold text-gray-900 dark:text-gray-100">{SITE_CONFIG.author.email}</div>
               </div>
             </a>
 
             {/* GitHub */}
             <a
-              href="https://github.com/yourusername"
+              href={SITE_CONFIG.author.github}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-6 bg-gray-50 dark:bg-gray-700 rounded-xl hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors group"
@@ -52,13 +54,13 @@ export default function ContactPage() {
               </div>
               <div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">GitHub</div>
-                <div className="text-lg font-semibold text-gray-900 dark:text-gray-100">@yourusername</div>
+                <div className="text-lg font-semibold text-gray-900 dark:text-gray-100">@JO-HEEJIN</div>
               </div>
             </a>
 
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href={SITE_CONFIG.author.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-6 bg-gray-50 dark:bg-gray-700 rounded-xl hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors group"
@@ -70,7 +72,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">LinkedIn</div>
-                <div className="text-lg font-semibold text-gray-900 dark:text-gray-100">Connect with me</div>
+                <div className="text-lg font-semibold text-gray-900 dark:text-gray-100">m0i0d</div>
               </div>
             </a>
 
