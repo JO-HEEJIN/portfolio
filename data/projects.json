@@ -122,64 +122,66 @@
       "awards": ["NASA Space Apps Challenge 2025 Winner"]
     },
     {
-      "id": "ai-music-generation",
-      "title": "AI Music Generation App",
-      "subtitle": "Text-to-Music with Real-time Visualization",
-      "description": "AI-powered music generation platform with 3D audio visualization",
-      "longDescription": "Innovative music generation platform leveraging Meta's MusicGen model to create original compositions from text prompts. Features include real-time 3D audio visualization, MIDI export, and style transfer capabilities.",
-      "category": "AI_ML",
-      "tags": ["Python", "PyTorch", "React", "Three.js", "MusicGen"],
-      "year": 2024,
-      "thumbnail": "/images/projects/music-gen-thumb.jpg",
+      "id": "coufun-ar",
+      "title": "Coufun AR App",
+      "subtitle": "Augmented Reality Social Platform",
+      "description": "AR-powered social platform for creating and sharing immersive experiences",
+      "longDescription": "Coufun is an innovative AR social platform that enables users to create, share, and experience augmented reality content in real-world environments. Winner of a national competition in South Korea, the app features location-based AR content, social sharing capabilities, and interactive AR filters. Built with Unity and ARCore/ARKit for cross-platform compatibility.",
+      "category": "AR_VR",
+      "tags": ["Unity", "ARCore", "ARKit", "C#", "Mobile AR"],
+      "year": 2023,
+      "thumbnail": "/images/projects/coufun-thumb.jpg",
       "images": [
-        "/images/projects/music-gen-1.jpg",
-        "/images/projects/music-gen-2.jpg",
-        "/images/projects/music-gen-3.jpg"
+        "/images/projects/coufun-1.jpg",
+        "/images/projects/coufun-2.jpg",
+        "/images/projects/coufun-3.jpg"
       ],
-      "videoUrl": "https://youtube.com/...",
-      "liveDemo": "https://musicgen.demo.com",
-      "githubUrl": "https://github.com/JO-HEEJIN/ai-music-gen",
+      "videoUrl": null,
+      "liveDemo": null,
+      "githubUrl": "https://github.com/101Bunker",
       "highlights": [
-        "Text-to-music generation using Meta's MusicGen",
-        "Real-time 3D audio visualization with Three.js",
-        "MIDI export for music production software",
-        "Style transfer between different genres",
-        "Collaborative playlist creation"
+        "Winner of National AR Competition in South Korea",
+        "Location-based AR content creation and sharing",
+        "Real-time multi-user AR experiences",
+        "Interactive AR filters and effects",
+        "Cross-platform support (iOS & Android)",
+        "Social feed with AR content discovery"
       ],
       "techStack": [
         {
-          "name": "Python",
-          "icon": "python",
-          "url": "https://python.org"
+          "name": "Unity",
+          "icon": "unity",
+          "url": "https://unity.com"
         },
         {
-          "name": "PyTorch",
-          "icon": "pytorch",
-          "url": "https://pytorch.org"
+          "name": "ARCore",
+          "icon": "arcore",
+          "url": "https://developers.google.com/ar"
         },
         {
-          "name": "React",
-          "icon": "react",
-          "url": "https://react.dev"
+          "name": "ARKit",
+          "icon": "arkit",
+          "url": "https://developer.apple.com/arkit/"
         },
         {
-          "name": "Three.js",
-          "icon": "threejs",
-          "url": "https://threejs.org"
+          "name": "C#",
+          "icon": "csharp",
+          "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
         }
       ],
       "metrics": [
         {
-          "label": "Generations",
-          "value": "10K",
+          "label": "Active Users",
+          "value": "15K",
           "unit": "+"
         },
         {
-          "label": "Avg. Generation Time",
-          "value": "8",
-          "unit": "s"
+          "label": "AR Content Created",
+          "value": "50K",
+          "unit": "+"
         }
-      ]
+      ],
+      "awards": ["National AR Competition Winner - South Korea"]
     },
     {
       "id": "birth2death",
@@ -381,6 +383,7 @@
       "liveDemo": null,
       "githubUrl": "https://github.com/JO-HEEJIN/burn-ai",
       "highlights": [
+        "1st Place Winner - National Medical AI Competition (South Korea)",
         "96% classification accuracy for burn severity",
         "Real-time inference on mobile devices",
         "HIPAA-compliant data handling",
@@ -420,7 +423,8 @@
           "value": "0.3",
           "unit": "s"
         }
-      ]
+      ],
+      "awards": ["1st Place - National Medical AI Competition (South Korea)"]
     },
     {
       "id": "niaverse-funding",

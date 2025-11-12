@@ -15,11 +15,11 @@ A modern, interactive portfolio website showcasing AR/VR, AI/ML, and web develop
 
 1. **Vision Pro Mars Trainer** - Immersive AR Training for Mars Operations
 2. **KisanAI** - NASA Space Apps Challenge 2025 Winner 🏆
-3. **AI Music Generation** - Text-to-music with 3D visualization
+3. **Coufun AR App** - National AR Competition Winner (South Korea) 🏆
 4. **Birth2Death** - ADHD Life Management App
 5. **GetnShow** - Interactive Story Platform
 6. **Agricultural AR** - NASA Space Apps Finalist
-7. **Skin Burn AI** - Medical AI Classification
+7. **Skin Burn AI** - 1st Place Medical AI Competition (South Korea) 🥇
 8. **Niaverse Funding Platform** - Decentralized Web3 Crowdfunding
 
 ## 🛠️ Tech Stack
