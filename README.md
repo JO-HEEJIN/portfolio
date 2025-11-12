@@ -5,7 +5,7 @@ A modern, interactive portfolio website showcasing AR/VR, AI/ML, and web develop
 ## 🚀 Features
 
 - **Interactive 3D Hero**: Stunning Three.js animated hero section with particle effects
-- **Project Showcase**: Comprehensive portfolio with 8 featured projects
+- **Project Showcase**: Comprehensive portfolio with 7 featured projects
 - **Responsive Design**: Mobile-first, fully responsive across all devices
 - **Modern Tech Stack**: Next.js 14, React 18, TypeScript, Tailwind CSS
 - **Performance Optimized**: <3s load time, Lighthouse score 95+
@@ -14,13 +14,12 @@ A modern, interactive portfolio website showcasing AR/VR, AI/ML, and web develop
 ## 📋 Projects Featured
 
 1. **Vision Pro Mars Trainer** - Immersive AR Training for Mars Operations
-2. **KisanAI** - NASA Space Apps Challenge 2025 Winner 🏆
-3. **Coufun AR App** - National AR Competition Winner (South Korea) 🏆
+2. **KisanAI** - Dual-Platform AR & AI Agricultural Platform 🏆 (NASA Winner)
+3. **Coufun AR App** - AR Social Platform 🏆 (National Winner)
 4. **Birth2Death** - ADHD Life Management App
 5. **GetnShow** - Interactive Story Platform
-6. **Agricultural AR** - NASA Space Apps Finalist
-7. **Skin Burn AI** - 1st Place Medical AI Competition (South Korea) 🥇
-8. **Niaverse Funding Platform** - Decentralized Web3 Crowdfunding
+6. **Skin Burn AI** - Medical AI Classification 🥇 (1st Place)
+7. **Niaverse Funding Platform** - Decentralized Web3 Crowdfunding
 
 ## 🛠️ Tech Stack
 

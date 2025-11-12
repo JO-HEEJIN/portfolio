@@ -62,11 +62,11 @@
     {
       "id": "kisan-ai",
       "title": "KisanAI",
-      "subtitle": "AR-Powered Agricultural Assistant for Indian Farmers",
-      "description": "Real-world AR platform with ChatGPT integration for precision agriculture",
-      "longDescription": "Comprehensive agricultural platform combining real-world AR visualization with AI-powered crop management. Features include disease detection, yield prediction, weather integration, and multilingual support for Indian farmers. Built for NASA Space Apps Challenge 2025.",
-      "category": "AI_ML",
-      "tags": ["React Native", "TensorFlow", "AR", "ChatGPT", "Agriculture"],
+      "subtitle": "Dual-Platform AR & AI Agricultural Assistant",
+      "description": "Mobile AR + Desktop game platform with AI-powered crop management for precision agriculture",
+      "longDescription": "KisanAI is a comprehensive dual-platform agricultural solution combining mobile AR/AI capabilities with desktop gaming and data analysis. Mobile platform features real-world AR visualization, AI-powered disease detection, and ChatGPT integration for farming advice. Desktop platform offers interactive farming simulation games and advanced data analytics dashboard. Winner of NASA Space Apps Challenge 2025, serving 5000+ farmers with multilingual support.",
+      "category": "AR_VR",
+      "tags": ["React Native", "Unity", "TensorFlow", "AR", "ChatGPT", "Game Dev"],
       "year": 2025,
       "thumbnail": "/images/projects/kisan-ai-thumb.jpg",
       "images": [
@@ -79,17 +79,25 @@
       "githubUrl": "https://github.com/JO-HEEJIN/kisanai",
       "highlights": [
         "Winner of NASA Space Apps Challenge 2025",
-        "Real-world AR overlay for crop health visualization",
-        "AI-powered disease detection with 93% accuracy",
-        "Integration with OpenAI GPT-4 for farming advice",
+        "Dual-Platform: Mobile AR/AI + Desktop Game/Analytics",
+        "Mobile: Real-world AR overlay for crop health visualization",
+        "Mobile: AI-powered disease detection with 93% accuracy",
+        "Mobile: Integration with OpenAI GPT-4 for farming advice",
+        "Desktop: Interactive farming simulation game",
+        "Desktop: Advanced data analytics dashboard",
         "Support for 15+ Indian languages",
-        "Weather-based yield predictions"
+        "Weather-based yield predictions with satellite data"
       ],
       "techStack": [
         {
           "name": "React Native",
           "icon": "react",
           "url": "https://reactnative.dev"
+        },
+        {
+          "name": "Unity",
+          "icon": "unity",
+          "url": "https://unity.com"
         },
         {
           "name": "TensorFlow",
@@ -105,6 +113,11 @@
           "name": "ARCore",
           "icon": "arcore",
           "url": "https://developers.google.com/ar"
+        },
+        {
+          "name": "NASA APIs",
+          "icon": "nasa",
+          "url": "https://api.nasa.gov"
         }
       ],
       "metrics": [
@@ -302,67 +315,6 @@
           "unit": "/100"
         }
       ]
-    },
-    {
-      "id": "agricultural-ar",
-      "title": "Agricultural AR Platform",
-      "subtitle": "NASA Space Apps Challenge Submission",
-      "description": "Complete agricultural platform with AR crop visualization",
-      "longDescription": "Comprehensive agricultural management platform developed for NASA Space Apps Challenge 2025. Combines satellite imagery, weather data, AR visualization, and AI-powered recommendations to help farmers optimize crop yields and reduce resource waste.",
-      "category": "AR_VR",
-      "tags": ["AR", "Agriculture", "Satellite", "AI", "NASA"],
-      "year": 2025,
-      "thumbnail": "/images/projects/agri-ar-thumb.jpg",
-      "images": [
-        "/images/projects/agri-ar-1.jpg",
-        "/images/projects/agri-ar-2.jpg",
-        "/images/projects/agri-ar-3.jpg"
-      ],
-      "videoUrl": "https://youtube.com/...",
-      "liveDemo": "https://agri-ar.demo.com",
-      "githubUrl": "https://github.com/JO-HEEJIN/agri-ar",
-      "highlights": [
-        "Integration with NASA satellite data",
-        "Real-time AR crop health visualization",
-        "Weather forecasting and alerts",
-        "AI-powered irrigation recommendations",
-        "Crop yield predictions"
-      ],
-      "techStack": [
-        {
-          "name": "React Native",
-          "icon": "react",
-          "url": "https://reactnative.dev"
-        },
-        {
-          "name": "ARCore",
-          "icon": "arcore",
-          "url": "https://developers.google.com/ar"
-        },
-        {
-          "name": "TensorFlow",
-          "icon": "tensorflow",
-          "url": "https://tensorflow.org"
-        },
-        {
-          "name": "NASA APIs",
-          "icon": "nasa",
-          "url": "https://api.nasa.gov"
-        }
-      ],
-      "metrics": [
-        {
-          "label": "Yield Improvement",
-          "value": "25",
-          "unit": "%"
-        },
-        {
-          "label": "Water Savings",
-          "value": "30",
-          "unit": "%"
-        }
-      ],
-      "awards": ["NASA Space Apps Challenge 2025 Finalist"]
     },
     {
       "id": "skin-burn-ai",
