@@ -266,8 +266,6 @@
       "thumbnail": "/images/projects/getn-show-thumb.jpg",
       "images": [
         "/images/projects/getn-show-1.jpg",
-        "/images/projects/getn-show-2.jpg",
-        "/images/projects/getn-show-3.jpg"
       ],
       "videoUrl": null,
       "liveDemo": "https://www.getn.show/",
@@ -322,7 +320,7 @@
       "longDescription": "Medical AI application using convolutional neural networks to classify burn severity from images. Assists healthcare professionals in rapid triage and treatment planning. Trained on diverse medical datasets with 96% classification accuracy.",
       "category": "AI_ML",
       "tags": ["Python", "TensorFlow", "Medical AI", "CNN", "Healthcare"],
-      "year": 2024,
+      "year": 2022,
       "thumbnail": "/images/projects/burn-ai-thumb.jpg",
       "images": [
         "/images/projects/burn-ai-1.jpg",
@@ -331,7 +329,7 @@
       ],
       "videoUrl": null,
       "liveDemo": null,
-      "githubUrl": "https://github.com/JO-HEEJIN/burn-ai",
+      "notionUrl": "https://dobito.notion.site/AI-cf9b0e1b19ce4ae390fd418671284eda?source=copy_link",
       "highlights": [
         "1st Place Winner - National Medical AI Competition (South Korea)",
         "96% classification accuracy for burn severity",
@@ -441,6 +439,70 @@
           "unit": "+"
         }
       ]
+    },
+    {
+      "id": "ux-design-portfolio",
+      "title": "UX Design & Brand Identity",
+      "subtitle": "Equity-Focused Design Philosophy with Google UX Certificate",
+      "description": "Comprehensive UX design portfolio featuring brand identity, mobile UI/UX, and equity-focused design work",
+      "longDescription": "A collection of design work emphasizing equity-focused and inclusive design principles. Completed Google UX Design Certificate (Coursera) and applied learnings to real-world projects including the UNDERDOG project for chronic pain patients. Design philosophy centers on 'solve for one, extend to many' - creating solutions that uplift historically underrepresented groups. Portfolio includes brand identity design (VENCLFIT, UNDERDOG, HEEJIN), mobile app UI/UX (KKUDUCK), and visual design work.",
+      "category": "DESIGN",
+      "tags": ["UX Design", "UI Design", "Figma", "Brand Identity", "Inclusive Design", "Adobe Creative Suite"],
+      "year": 2021,
+      "thumbnail": "/images/projects/ux-design-thumb.jpg",
+      "images": [
+        "/images/projects/ux-design-1.jpg",
+        "/images/projects/ux-design-2.jpg",
+        "/images/projects/ux-design-3.jpg",
+        "/images/projects/ux-design-4.jpg"
+      ],
+      "videoUrl": null,
+      "liveDemo": "https://velog.io/@midmost/Introduction-to-Logic",
+      "githubUrl": null,
+      "highlights": [
+        "Google UX Design Certificate (Coursera)",
+        "Equity-focused design philosophy: designing for historically underrepresented groups",
+        "UNDERDOG Project: Products for people with chronic pain and disabilities",
+        "Brand Identity Design: VENCLFIT, UNDERDOG, HEEJIN logos",
+        "Mobile App UI/UX: KKUDUCK subscription management interface",
+        "Visual Design: INTOEFL poster design",
+        "Inclusive design principle: 'solve for one, extend to many'"
+      ],
+      "techStack": [
+        {
+          "name": "Figma",
+          "icon": "figma",
+          "url": "https://figma.com"
+        },
+        {
+          "name": "Adobe Illustrator",
+          "icon": "illustrator",
+          "url": "https://adobe.com/illustrator"
+        },
+        {
+          "name": "Adobe Photoshop",
+          "icon": "photoshop",
+          "url": "https://adobe.com/photoshop"
+        },
+        {
+          "name": "Blender",
+          "icon": "blender",
+          "url": "https://blender.org"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Design Projects",
+          "value": "15",
+          "unit": "+"
+        },
+        {
+          "label": "Brand Identities",
+          "value": "6",
+          "unit": ""
+        }
+      ],
+      "awards": ["Google UX Design Professional Certificate"]
     }
   ]
 }

@@ -17,6 +17,7 @@ export const CATEGORY_LABELS: Record<string, string> = {
   WEB: "Web",
   HEALTHCARE: "Healthcare",
   BLOCKCHAIN: "Blockchain",
+  DESIGN: "Design",
 } as const;
 
 export const CATEGORY_COLORS: Record<string, string> = {
@@ -25,6 +26,7 @@ export const CATEGORY_COLORS: Record<string, string> = {
   WEB: "bg-green-500/10 text-green-500 border-green-500/20",
   HEALTHCARE: "bg-red-500/10 text-red-500 border-red-500/20",
   BLOCKCHAIN: "bg-orange-500/10 text-orange-500 border-orange-500/20",
+  DESIGN: "bg-pink-500/10 text-pink-500 border-pink-500/20",
 } as const;
 
 export const NAV_ITEMS = [
