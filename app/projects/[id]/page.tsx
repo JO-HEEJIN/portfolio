@@ -210,6 +210,24 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </div>
         )}
 
+        {/* Video */}
+        {project.videoUrl && (
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+              Project Video
+            </h2>
+            <div className="relative w-full rounded-xl overflow-hidden bg-gray-900" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src={project.videoUrl.replace('youtu.be/', 'www.youtube.com/embed/').replace('watch?v=', 'embed/').split('?')[0]}
+                title={`${project.title} video`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        )}
+
         {/* Gallery */}
         {project.images && project.images.length > 0 && (
           <div className="mb-8">

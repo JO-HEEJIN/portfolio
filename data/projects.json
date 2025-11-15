@@ -148,7 +148,7 @@
         "/images/projects/coufun-2.jpg",
         "/images/projects/coufun-3.jpg"
       ],
-      "videoUrl": "https://www.metaversedev.kr/gallery_2021/101%EB%B2%99%EC%BB%A4-TEAM-COUFUN-1",
+      "videoUrl": "https://youtu.be/YNRdlhhtPDU?si=v7SlCBBbkbePVMLF",
       "notion": "https://dobito.notion.site/COUFUN-1cb3955ad0094a20b465b6fc28a1aa43?source=copy_link",
       "githubUrl": "https://github.com/101Bunker",
       "highlights": [
@@ -383,7 +383,7 @@
       "longDescription": "Niaverse is a decentralized funding platform built on blockchain technology, enabling creators to launch campaigns and receive funding transparently. Features include smart contract-based fund management, NFT rewards for backers, milestone-based fund release, and comprehensive project analytics. Built with modern web technologies and integrated with Ethereum blockchain.",
       "category": "BLOCKCHAIN",
       "tags": ["Next.js", "Web3", "Ethereum", "Smart Contracts", "TypeScript"],
-      "year": 2024,
+      "year": 2025,
       "thumbnail": "/images/projects/niaverse-thumb.jpg",
       "images": [
         "/images/projects/niaverse-1.jpg",
@@ -518,9 +518,12 @@
       "images": [
         "/images/projects/venclfit-1.jpg",
         "/images/projects/venclfit-2.jpg",
-        "/images/projects/venclfit-3.jpg"
+        "/images/projects/venclfit-3.jpg",
+        "/images/projects/venclfit-4.jpg",
+        "/images/projects/venclfit-5.jpg",
+        "/images/projects/venclfit-6.jpg"
       ],
-      "videoUrl": null,
+      "videoUrl": "https://youtu.be/vP5QW6I4D6s",
       "liveDemo": null,
       "githubUrl": null,
       "notion": "https://dobito.notion.site/VENCLFIT-08eebc1fafe64bfb88224c8f5290ae85",
