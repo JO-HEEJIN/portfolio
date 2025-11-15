@@ -54,7 +54,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
 
         {/* Links */}
-        <div className="flex gap-4 mb-8">
+        <div className="flex flex-wrap gap-4 mb-8">
           {project.liveDemo && (
             <a
               href={project.liveDemo}
@@ -75,6 +75,26 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               View Code →
             </a>
           )}
+          {project.notion && (
+            <a
+              href={project.notion}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 font-semibold rounded-lg border-2 border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 transition-colors"
+            >
+              View Notion →
+            </a>
+          )}
+          {project.pitchDeck && (
+            <a
+              href={project.pitchDeck}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-colors"
+            >
+              View Pitch Deck →
+            </a>
+          )}
         </div>
 
         {/* Awards */}
@@ -90,6 +110,30 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 </li>
               ))}
             </ul>
+          </div>
+        )}
+
+        {/* Press Coverage */}
+        {project.pressLinks && project.pressLinks.length > 0 && (
+          <div className="mb-8 p-6 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800">
+            <h2 className="text-lg font-bold text-blue-900 dark:text-blue-200 mb-3">
+              📰 Press Coverage
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {project.pressLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 p-3 bg-white dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-blue-700 hover:border-blue-400 dark:hover:border-blue-500 transition-colors"
+                >
+                  <span className="text-blue-600 dark:text-blue-400">📄</span>
+                  <span className="text-blue-900 dark:text-blue-100 font-medium">{link.title}</span>
+                  <span className="ml-auto text-blue-600 dark:text-blue-400">→</span>
+                </a>
+              ))}
+            </div>
           </div>
         )}
 

@@ -5,7 +5,7 @@ A modern, interactive portfolio website showcasing AR/VR, AI/ML, and web develop
 ## 🚀 Features
 
 - **Interactive 3D Hero**: Stunning Three.js animated hero section with particle effects
-- **Project Showcase**: Comprehensive portfolio with 8 featured projects
+- **Project Showcase**: Comprehensive portfolio with 9 featured projects
 - **Responsive Design**: Mobile-first, fully responsive across all devices
 - **Modern Tech Stack**: Next.js 14, React 18, TypeScript, Tailwind CSS
 - **Performance Optimized**: <3s load time, Lighthouse score 95+
@@ -21,6 +21,7 @@ A modern, interactive portfolio website showcasing AR/VR, AI/ML, and web develop
 6. **Skin Burn AI** - Medical AI Classification 🥇 (1st Place)
 7. **Niaverse Funding Platform** - Decentralized Web3 Crowdfunding
 8. **UX Design & Brand Identity** - Equity-Focused Design with Google Certificate 🎓
+9. **VENCLFIT (Watch Your Neck)** - AI Posture Tracking 🏆 (Most Excellent Award)
 
 ## 🛠️ Tech Stack
 

@@ -143,6 +143,7 @@
       "year": 2023,
       "thumbnail": "/images/projects/coufun-thumb.jpg",
       "images": [
+        "/images/projects/coufun-0.jpg",
         "/images/projects/coufun-1.jpg",
         "/images/projects/coufun-2.jpg",
         "/images/projects/coufun-3.jpg"
@@ -454,7 +455,7 @@
         "/images/projects/ux-design-1.jpg",
         "/images/projects/ux-design-2.jpg",
         "/images/projects/ux-design-3.jpg",
-        "/images/projects/ux-design-4.jpg"
+        "/images/projects/ux-design-4.gif"
       ],
       "videoUrl": null,
       "liveDemo": "https://velog.io/@midmost/Introduction-to-Logic",
@@ -503,6 +504,88 @@
         }
       ],
       "awards": ["Google UX Design Professional Certificate"]
+    },
+    {
+      "id": "venclfit",
+      "title": "VENCLFIT (Watch Your Neck)",
+      "subtitle": "AI-Powered Posture Tracking & Neck Health Management",
+      "description": "Cervical spine health management service targeting 20-40 age group with real-time posture monitoring",
+      "longDescription": "VENCLFIT is an innovative healthcare solution addressing forward head posture (text neck syndrome) in younger demographics. The service combines real-time posture tracking, AI-powered analysis, and personalized health management to prevent and treat cervical spine issues caused by prolonged device usage. Winner of the Most Excellent Award at TEU MED 2기 medical innovation competition, earning 1.5 million won in prize money. The project emerged from a 7-week medical technology innovation program featuring startup toolkit training, team projects, and expert mentoring.",
+      "category": "HEALTHCARE",
+      "tags": ["Healthcare", "AI", "Posture Detection", "Mobile Health", "Preventive Care"],
+      "year": 2022,
+      "thumbnail": "/images/projects/venclfit-thumb.jpg",
+      "images": [
+        "/images/projects/venclfit-1.jpg",
+        "/images/projects/venclfit-2.jpg",
+        "/images/projects/venclfit-3.jpg"
+      ],
+      "videoUrl": null,
+      "liveDemo": null,
+      "githubUrl": null,
+      "notion": "https://dobito.notion.site/VENCLFIT-08eebc1fafe64bfb88224c8f5290ae85",
+      "pitchDeck": "https://docs.google.com/presentation/d/1HPey25n-0IxShbo9FWkfGE0Y8YQTvOSdCwyRBBl3xDA/edit?usp=sharing",
+      "highlights": [
+        "Most Excellent Award at TEU MED 2기 Competition (Prize: 1.5M won)",
+        "Real-time cervical spine posture tracking and monitoring",
+        "AI-powered analysis for forward head posture detection",
+        "Personalized health management plans for 20-40 age demographic",
+        "Preventive care solution for text neck syndrome",
+        "Featured in major Korean media: E-Daily, Digital Daily, Medigatenews"
+      ],
+      "techStack": [
+        {
+          "name": "AI/ML",
+          "icon": "ai",
+          "url": "https://tensorflow.org"
+        },
+        {
+          "name": "Mobile Development",
+          "icon": "mobile",
+          "url": "https://reactnative.dev"
+        },
+        {
+          "name": "Computer Vision",
+          "icon": "vision",
+          "url": "https://opencv.org"
+        },
+        {
+          "name": "Healthcare Tech",
+          "icon": "health",
+          "url": "#"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Target Demographic",
+          "value": "20-40",
+          "unit": "세대"
+        },
+        {
+          "label": "Prize Money",
+          "value": "1.5M",
+          "unit": "원"
+        }
+      ],
+      "awards": ["TEU MED 2기 최우수상 (Most Excellent Award)"],
+      "pressLinks": [
+        {
+          "title": "E-Daily",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=02663366632361392&mediaCodeNo=257"
+        },
+        {
+          "title": "Digital Daily",
+          "url": "https://www.ddaily.co.kr/page/view/2022061409360855418"
+        },
+        {
+          "title": "Medigatenews",
+          "url": "https://www.medigatenews.com/news/1788122223"
+        },
+        {
+          "title": "Newswire",
+          "url": "https://www.newswire.co.kr/newsRead.php?no=946119"
+        }
+      ]
     }
   ]
 }

@@ -5,7 +5,8 @@ export type ProjectCategory =
   | 'AI_ML'
   | 'WEB'
   | 'HEALTHCARE'
-  | 'BLOCKCHAIN';
+  | 'BLOCKCHAIN'
+  | 'DESIGN';
 
 export interface TechStack {
   name: string;
@@ -17,6 +18,11 @@ export interface Metric {
   label: string;
   value: string;
   unit?: string;
+}
+
+export interface PressLink {
+  title: string;
+  url: string;
 }
 
 export interface Project {
@@ -33,10 +39,13 @@ export interface Project {
   videoUrl?: string;
   liveDemo?: string;
   githubUrl?: string;
+  notion?: string;
+  pitchDeck?: string;
   highlights: string[];
   techStack: TechStack[];
   metrics?: Metric[];
   awards?: string[];
+  pressLinks?: PressLink[];
 }
 
 export interface Skill {
