@@ -265,7 +265,7 @@
       "year": 2025,
       "thumbnail": "/images/projects/getn-show-thumb.jpg",
       "images": [
-        "/images/projects/getn-show-1.jpg",
+        "/images/projects/getn-show-1.jpg"
       ],
       "videoUrl": null,
       "liveDemo": "https://www.getn.show/",
