@@ -1,27 +1,29 @@
 {
   "projects": [
     {
-      "id": "vision-pro-mars-trainer",
-      "title": "Vision Pro Mars Trainer",
-      "subtitle": "Immersive AR Training for NASA Space Apps Challenge",
-      "description": "Interactive AR training simulator for Mars surface operations using Apple Vision Pro",
-      "longDescription": "Developed an immersive AR training application for NASA Space Apps Challenge 2025, enabling astronauts to practice Mars surface operations in mixed reality. The application combines real-time spatial mapping, hand tracking, and realistic physics simulation to create an authentic training environment.",
-      "category": "AR_VR",
-      "tags": ["SwiftUI", "RealityKit", "ARKit", "Vision Pro", "3D"],
-      "year": 2025,
-      "thumbnail": "/images/projects/mars-trainer-2.png",
+      "id": "birth2death",
+      "title": "Birth2Death",
+      "subtitle": "ADHD Life Management with Gamification",
+      "description": "iOS app helping ADHD users manage life through gamification and AI coaching",
+      "longDescription": "Comprehensive life management platform designed specifically for individuals with ADHD. Features include task gamification with collectible characters, AI-powered habit coaching, time-boxing with gentle reminders, and progress visualization. Built with SwiftUI and integrated with GPT-4 for personalized guidance.",
+      "category": "HEALTHCARE",
+      "tags": ["SwiftUI", "iOS", "HealthKit", "GPT-4", "Gamification"],
+      "year": 2024,
+      "thumbnail": "/images/projects/birth2death-thumb.jpg",
       "images": [
-        "/images/projects/mars-trainer-1.png",
-        "/images/projects/mars-trainer-2.png"
+        "/images/projects/birth2death-1.jpg",
+        "/images/projects/birth2death-2.jpg",
+        "/images/projects/birth2death-3.jpg"
       ],
-      "videoUrl": null,
+      "videoUrl": "https://youtu.be/4rUfr1F2gjo?si=6w-7GPp41LtnbzJM",
       "liveDemo": null,
-      "githubUrl": null,
+      "githubUrl": "https://github.com/JO-HEEJIN/birth2death",
       "highlights": [
-        "Real-time spatial mapping and hand gesture recognition",
-        "Realistic Mars environment with accurate terrain data",
-        "Multi-user collaborative training sessions",
-        "Interactive 3D models with physics simulation"
+        "Gamified task management with collectible 3D characters",
+        "AI-powered habit coaching using GPT-4",
+        "Gentle time-boxing with non-intrusive reminders",
+        "Progress visualization and analytics",
+        "Integration with Apple HealthKit"
       ],
       "techStack": [
         {
@@ -35,25 +37,25 @@
           "url": "https://developer.apple.com/xcode/swiftui/"
         },
         {
-          "name": "RealityKit",
-          "icon": "realitykit",
-          "url": "https://developer.apple.com/augmented-reality/realitykit/"
+          "name": "SceneKit",
+          "icon": "scenekit",
+          "url": "https://developer.apple.com/scenekit/"
         },
         {
-          "name": "ARKit",
-          "icon": "arkit",
-          "url": "https://developer.apple.com/arkit/"
+          "name": "OpenAI",
+          "icon": "openai",
+          "url": "https://openai.com"
         }
       ],
       "metrics": [
         {
-          "label": "Training Accuracy",
-          "value": "95",
+          "label": "Task Completion Rate",
+          "value": "78",
           "unit": "%"
         },
         {
-          "label": "User Satisfaction",
-          "value": "4.8",
+          "label": "User Engagement",
+          "value": "4.7",
           "unit": "/5"
         }
       ]
@@ -196,29 +198,27 @@
       "awards": ["National AR Competition Winner - South Korea"]
     },
     {
-      "id": "birth2death",
-      "title": "Birth2Death",
-      "subtitle": "ADHD Life Management with Gamification",
-      "description": "iOS app helping ADHD users manage life through gamification and AI coaching",
-      "longDescription": "Comprehensive life management platform designed specifically for individuals with ADHD. Features include task gamification with collectible characters, AI-powered habit coaching, time-boxing with gentle reminders, and progress visualization. Built with SwiftUI and integrated with GPT-4 for personalized guidance.",
-      "category": "HEALTHCARE",
-      "tags": ["SwiftUI", "iOS", "HealthKit", "GPT-4", "Gamification"],
-      "year": 2024,
-      "thumbnail": "/images/projects/birth2death-thumb.jpg",
+      "id": "vision-pro-mars-trainer",
+      "title": "Vision Pro Mars Trainer",
+      "subtitle": "Immersive AR Training for NASA Space Apps Challenge",
+      "description": "Interactive AR training simulator for Mars surface operations using Apple Vision Pro",
+      "longDescription": "Developed an immersive AR training application for NASA Space Apps Challenge 2025, enabling astronauts to practice Mars surface operations in mixed reality. The application combines real-time spatial mapping, hand tracking, and realistic physics simulation to create an authentic training environment.",
+      "category": "AR_VR",
+      "tags": ["SwiftUI", "RealityKit", "ARKit", "Vision Pro", "3D"],
+      "year": 2025,
+      "thumbnail": "/images/projects/mars-trainer-2.png",
       "images": [
-        "/images/projects/birth2death-1.jpg",
-        "/images/projects/birth2death-2.jpg",
-        "/images/projects/birth2death-3.jpg"
+        "/images/projects/mars-trainer-1.png",
+        "/images/projects/mars-trainer-2.png"
       ],
-      "videoUrl": "https://youtu.be/4rUfr1F2gjo?si=6w-7GPp41LtnbzJM",
+      "videoUrl": null,
       "liveDemo": null,
-      "githubUrl": "https://github.com/JO-HEEJIN/birth2death",
+      "githubUrl": null,
       "highlights": [
-        "Gamified task management with collectible 3D characters",
-        "AI-powered habit coaching using GPT-4",
-        "Gentle time-boxing with non-intrusive reminders",
-        "Progress visualization and analytics",
-        "Integration with Apple HealthKit"
+        "Real-time spatial mapping and hand gesture recognition",
+        "Realistic Mars environment with accurate terrain data",
+        "Multi-user collaborative training sessions",
+        "Interactive 3D models with physics simulation"
       ],
       "techStack": [
         {
@@ -232,25 +232,25 @@
           "url": "https://developer.apple.com/xcode/swiftui/"
         },
         {
-          "name": "SceneKit",
-          "icon": "scenekit",
-          "url": "https://developer.apple.com/scenekit/"
+          "name": "RealityKit",
+          "icon": "realitykit",
+          "url": "https://developer.apple.com/augmented-reality/realitykit/"
         },
         {
-          "name": "OpenAI",
-          "icon": "openai",
-          "url": "https://openai.com"
+          "name": "ARKit",
+          "icon": "arkit",
+          "url": "https://developer.apple.com/arkit/"
         }
       ],
       "metrics": [
         {
-          "label": "Task Completion Rate",
-          "value": "78",
+          "label": "Training Accuracy",
+          "value": "95",
           "unit": "%"
         },
         {
-          "label": "User Engagement",
-          "value": "4.7",
+          "label": "User Satisfaction",
+          "value": "4.8",
           "unit": "/5"
         }
       ]

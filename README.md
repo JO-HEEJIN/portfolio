@@ -13,10 +13,10 @@ A modern, interactive portfolio website showcasing AR/VR, AI/ML, and web develop
 
 ## 📋 Projects Featured
 
-1. **Vision Pro Mars Trainer** - Immersive AR Training for Mars Operations
+1. **Birth2Death** - ADHD Life Management App
 2. **KisanAI** - Dual-Platform AR & AI Agricultural Platform 🏆 (NASA Winner)
 3. **Coufun AR App** - AR Social Platform 🏆 (National Winner)
-4. **Birth2Death** - ADHD Life Management App
+4. **Vision Pro Mars Trainer** - Immersive AR Training for Mars Operations
 5. **VENCLFIT (Watch Your Neck)** - AI Posture Tracking 🏆 (Most Excellent Award)
 6. **Skin Burn AI** - Medical AI Classification 🥇 (1st Place)
 7. **Niaverse Funding Platform** - Decentralized Web3 Crowdfunding
