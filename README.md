@@ -17,11 +17,11 @@ A modern, interactive portfolio website showcasing AR/VR, AI/ML, and web develop
 2. **KisanAI** - Dual-Platform AR & AI Agricultural Platform 🏆 (NASA Winner)
 3. **Coufun AR App** - AR Social Platform 🏆 (National Winner)
 4. **Birth2Death** - ADHD Life Management App
-5. **GetnShow** - Interactive Story Platform
+5. **VENCLFIT (Watch Your Neck)** - AI Posture Tracking 🏆 (Most Excellent Award)
 6. **Skin Burn AI** - Medical AI Classification 🥇 (1st Place)
 7. **Niaverse Funding Platform** - Decentralized Web3 Crowdfunding
 8. **UX Design & Brand Identity** - Equity-Focused Design with Google Certificate 🎓
-9. **VENCLFIT (Watch Your Neck)** - AI Posture Tracking 🏆 (Most Excellent Award)
+9. **GetnShow** - Interactive Story Platform
 
 ## 🛠️ Tech Stack
 

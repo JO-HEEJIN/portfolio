@@ -256,60 +256,87 @@
       ]
     },
     {
-      "id": "getn-show",
-      "title": "GetnShow",
-      "subtitle": "Interactive Story Platform with Real-time Collaboration",
-      "description": "Platform for creating and sharing interactive web experiences",
-      "longDescription": "Modern web platform enabling creators to build and share interactive storytelling experiences. Features real-time collaboration, rich media embedding, analytics, and monetization tools. Built with Next.js 14 and optimized for performance.",
-      "category": "WEB",
-      "tags": ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
-      "year": 2025,
-      "thumbnail": "/images/projects/getn-show-thumb.jpg",
+      "id": "venclfit",
+      "title": "VENCLFIT (Watch Your Neck)",
+      "subtitle": "AI-Powered Posture Tracking & Neck Health Management",
+      "description": "Cervical spine health management service targeting 20-40 age group with real-time posture monitoring",
+      "longDescription": "VENCLFIT is an innovative healthcare solution addressing forward head posture (text neck syndrome) in younger demographics. The service combines real-time posture tracking, AI-powered analysis, and personalized health management to prevent and treat cervical spine issues caused by prolonged device usage. Winner of the Most Excellent Award at TEU MED 2기 medical innovation competition, earning 1.5 million won in prize money. The project emerged from a 7-week medical technology innovation program featuring startup toolkit training, team projects, and expert mentoring.",
+      "category": "HEALTHCARE",
+      "tags": ["Healthcare", "AI", "Posture Detection", "Mobile Health", "Preventive Care"],
+      "year": 2022,
+      "thumbnail": "/images/projects/venclfit-thumb.jpg",
       "images": [
-        "/images/projects/getn-show-1.jpg"
+        "/images/projects/venclfit-1.jpg",
+        "/images/projects/venclfit-2.jpg",
+        "/images/projects/venclfit-3.jpg",
+        "/images/projects/venclfit-4.jpg",
+        "/images/projects/venclfit-5.jpg",
+        "/images/projects/venclfit-6.jpg"
       ],
-      "videoUrl": null,
-      "liveDemo": "https://www.getn.show/",
+      "videoUrl": "https://youtu.be/vP5QW6I4D6s",
+      "liveDemo": null,
       "githubUrl": null,
+      "notion": "https://dobito.notion.site/VENCLFIT-08eebc1fafe64bfb88224c8f5290ae85",
+      "pitchDeck": "https://docs.google.com/presentation/d/1HPey25n-0IxShbo9FWkfGE0Y8YQTvOSdCwyRBBl3xDA/edit?usp=sharing",
       "highlights": [
-        "Real-time collaborative editing",
-        "Rich media support (video, audio, 3D)",
-        "Performance-optimized with Next.js 14",
-        "Built-in analytics and engagement metrics",
-        "Creator monetization tools"
+        "Most Excellent Award at TEU MED 2기 Competition (Prize: 1.5M won)",
+        "Real-time cervical spine posture tracking and monitoring",
+        "AI-powered analysis for forward head posture detection",
+        "Personalized health management plans for 20-40 age demographic",
+        "Preventive care solution for text neck syndrome",
+        "Featured in major Korean media: E-Daily, Digital Daily, Medigatenews"
       ],
       "techStack": [
         {
-          "name": "Next.js",
-          "icon": "nextjs",
-          "url": "https://nextjs.org"
+          "name": "AI/ML",
+          "icon": "ai",
+          "url": "https://tensorflow.org"
         },
         {
-          "name": "React",
-          "icon": "react",
-          "url": "https://react.dev"
+          "name": "Mobile Development",
+          "icon": "mobile",
+          "url": "https://reactnative.dev"
         },
         {
-          "name": "TypeScript",
-          "icon": "typescript",
-          "url": "https://typescriptlang.org"
+          "name": "Computer Vision",
+          "icon": "vision",
+          "url": "https://opencv.org"
         },
         {
-          "name": "Tailwind CSS",
-          "icon": "tailwind",
-          "url": "https://tailwindcss.com"
+          "name": "Healthcare Tech",
+          "icon": "health",
+          "url": "#"
         }
       ],
       "metrics": [
         {
-          "label": "Page Load Time",
-          "value": "1.2",
-          "unit": "s"
+          "label": "Target Demographic",
+          "value": "20-40",
+          "unit": "세대"
         },
         {
-          "label": "Lighthouse Score",
-          "value": "98",
-          "unit": "/100"
+          "label": "Prize Money",
+          "value": "1.5M",
+          "unit": "원"
+        }
+      ],
+      "awards": ["TEU MED 2기 최우수상 (Most Excellent Award)"],
+      "pressLinks": [
+        {
+          "title": "E-Daily",
+          "url": "https://www.edaily.co.kr/News/Read?newsId=02663366632361392&mediaCodeNo=257"
+        },
+        {
+          "title": "Digital Daily",
+          "url": "https://www.ddaily.co.kr/page/view/2022061409360855418"
+        },
+        {
+          "title": "Medigatenews",
+          "url": "https://www.medigatenews.com/news/1788122223"
+        },
+        {
+          "title": "Newswire",
+          "url": "https://www.newswire.co.kr/newsRead.php?no=946119"
         }
       ]
     },
@@ -506,87 +533,60 @@
       "awards": ["Google UX Design Professional Certificate"]
     },
     {
-      "id": "venclfit",
-      "title": "VENCLFIT (Watch Your Neck)",
-      "subtitle": "AI-Powered Posture Tracking & Neck Health Management",
-      "description": "Cervical spine health management service targeting 20-40 age group with real-time posture monitoring",
-      "longDescription": "VENCLFIT is an innovative healthcare solution addressing forward head posture (text neck syndrome) in younger demographics. The service combines real-time posture tracking, AI-powered analysis, and personalized health management to prevent and treat cervical spine issues caused by prolonged device usage. Winner of the Most Excellent Award at TEU MED 2기 medical innovation competition, earning 1.5 million won in prize money. The project emerged from a 7-week medical technology innovation program featuring startup toolkit training, team projects, and expert mentoring.",
-      "category": "HEALTHCARE",
-      "tags": ["Healthcare", "AI", "Posture Detection", "Mobile Health", "Preventive Care"],
-      "year": 2022,
-      "thumbnail": "/images/projects/venclfit-thumb.jpg",
+      "id": "getn-show",
+      "title": "GetnShow",
+      "subtitle": "Interactive Story Platform with Real-time Collaboration",
+      "description": "Platform for creating and sharing interactive web experiences",
+      "longDescription": "Modern web platform enabling creators to build and share interactive storytelling experiences. Features real-time collaboration, rich media embedding, analytics, and monetization tools. Built with Next.js 14 and optimized for performance.",
+      "category": "WEB",
+      "tags": ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
+      "year": 2025,
+      "thumbnail": "/images/projects/getn-show-thumb.jpg",
       "images": [
-        "/images/projects/venclfit-1.jpg",
-        "/images/projects/venclfit-2.jpg",
-        "/images/projects/venclfit-3.jpg",
-        "/images/projects/venclfit-4.jpg",
-        "/images/projects/venclfit-5.jpg",
-        "/images/projects/venclfit-6.jpg"
+        "/images/projects/getn-show-1.jpg"
       ],
-      "videoUrl": "https://youtu.be/vP5QW6I4D6s",
-      "liveDemo": null,
+      "videoUrl": null,
+      "liveDemo": "https://www.getn.show/",
       "githubUrl": null,
-      "notion": "https://dobito.notion.site/VENCLFIT-08eebc1fafe64bfb88224c8f5290ae85",
-      "pitchDeck": "https://docs.google.com/presentation/d/1HPey25n-0IxShbo9FWkfGE0Y8YQTvOSdCwyRBBl3xDA/edit?usp=sharing",
       "highlights": [
-        "Most Excellent Award at TEU MED 2기 Competition (Prize: 1.5M won)",
-        "Real-time cervical spine posture tracking and monitoring",
-        "AI-powered analysis for forward head posture detection",
-        "Personalized health management plans for 20-40 age demographic",
-        "Preventive care solution for text neck syndrome",
-        "Featured in major Korean media: E-Daily, Digital Daily, Medigatenews"
+        "Real-time collaborative editing",
+        "Rich media support (video, audio, 3D)",
+        "Performance-optimized with Next.js 14",
+        "Built-in analytics and engagement metrics",
+        "Creator monetization tools"
       ],
       "techStack": [
         {
-          "name": "AI/ML",
-          "icon": "ai",
-          "url": "https://tensorflow.org"
+          "name": "Next.js",
+          "icon": "nextjs",
+          "url": "https://nextjs.org"
         },
         {
-          "name": "Mobile Development",
-          "icon": "mobile",
-          "url": "https://reactnative.dev"
+          "name": "React",
+          "icon": "react",
+          "url": "https://react.dev"
         },
         {
-          "name": "Computer Vision",
-          "icon": "vision",
-          "url": "https://opencv.org"
+          "name": "TypeScript",
+          "icon": "typescript",
+          "url": "https://typescriptlang.org"
         },
         {
-          "name": "Healthcare Tech",
-          "icon": "health",
-          "url": "#"
+          "name": "Tailwind CSS",
+          "icon": "tailwind",
+          "url": "https://tailwindcss.com"
         }
       ],
       "metrics": [
         {
-          "label": "Target Demographic",
-          "value": "20-40",
-          "unit": "세대"
+          "label": "Page Load Time",
+          "value": "1.2",
+          "unit": "s"
         },
         {
-          "label": "Prize Money",
-          "value": "1.5M",
-          "unit": "원"
-        }
-      ],
-      "awards": ["TEU MED 2기 최우수상 (Most Excellent Award)"],
-      "pressLinks": [
-        {
-          "title": "E-Daily",
-          "url": "https://www.edaily.co.kr/News/Read?newsId=02663366632361392&mediaCodeNo=257"
-        },
-        {
-          "title": "Digital Daily",
-          "url": "https://www.ddaily.co.kr/page/view/2022061409360855418"
-        },
-        {
-          "title": "Medigatenews",
-          "url": "https://www.medigatenews.com/news/1788122223"
-        },
-        {
-          "title": "Newswire",
-          "url": "https://www.newswire.co.kr/newsRead.php?no=946119"
+          "label": "Lighthouse Score",
+          "value": "98",
+          "unit": "/100"
         }
       ]
     }
