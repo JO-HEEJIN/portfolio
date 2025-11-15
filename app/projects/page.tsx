@@ -1,8 +1,9 @@
 import { ProjectGrid } from "@/components/projects/ProjectGrid";
 import projectsData from "@/data/projects.json";
+import { Project } from "@/lib/types";
 
 export default function ProjectsPage() {
-  const projects = projectsData.projects;
+  const projects = projectsData.projects as Project[];
 
   return (
     <main className="min-h-screen pt-24 pb-16">

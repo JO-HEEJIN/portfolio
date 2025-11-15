@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import projectsData from "@/data/projects.json";
 import { CATEGORY_LABELS, CATEGORY_COLORS } from "@/lib/constants";
+import { Project } from "@/lib/types";
 
 interface ProjectPageProps {
   params: {
@@ -11,7 +12,7 @@ interface ProjectPageProps {
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { id } = await params;
-  const project = projectsData.projects.find((p) => p.id === id);
+  const project = (projectsData.projects as Project[]).find((p) => p.id === id);
 
   if (!project) {
     notFound();
