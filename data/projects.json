@@ -14,9 +14,9 @@
         "/images/projects/mars-trainer-1.png",
         "/images/projects/mars-trainer-2.png"
       ],
-      "videoUrl": "https://youtube.com/...",
+      "videoUrl": null,
       "liveDemo": null,
-      "githubUrl": "https://github.com/JO-HEEJIN/mars-trainer",
+      "githubUrl": null,
       "highlights": [
         "Real-time spatial mapping and hand gesture recognition",
         "Realistic Mars environment with accurate terrain data",
@@ -60,7 +60,7 @@
     },
     {
       "id": "kisan-ai",
-      "title": "KisanAI",
+      "title": "KisanAIAR",
       "subtitle": "Dual-Platform AR & AI Agricultural Assistant",
       "description": "Mobile AR + Desktop game platform with AI-powered crop management for precision agriculture",
       "longDescription": "KisanAI is a comprehensive dual-platform agricultural solution combining mobile AR/AI capabilities with desktop gaming and data analysis. Mobile platform features real-world AR visualization, AI-powered disease detection, and ChatGPT integration for farming advice. Desktop platform offers interactive farming simulation games and advanced data analytics dashboard. Winner of NASA Space Apps Challenge 2025, serving 5000+ farmers with multilingual support.",
@@ -73,8 +73,8 @@
         "/images/projects/kisan-ai-2.jpg",
         "/images/projects/kisan-ai-3.jpg"
       ],
-      "videoUrl": "https://youtube.com/...",
-      "liveDemo": "https://kisanai.app",
+      "videoUrl": "https://youtu.be/YGJO8rUoSCs?si=-CdsNDvXrb1MtBm3",
+      "liveDemo": "https://kisan-ai-one.vercel.app/",
       "githubUrl": "https://github.com/JO-HEEJIN/kisanai",
       "highlights": [
         "Winner of NASA Space Apps Challenge 2025",
@@ -84,7 +84,6 @@
         "Mobile: Integration with OpenAI GPT-4 for farming advice",
         "Desktop: Interactive farming simulation game",
         "Desktop: Advanced data analytics dashboard",
-        "Support for 15+ Indian languages",
         "Weather-based yield predictions with satellite data"
       ],
       "techStack": [
@@ -148,8 +147,8 @@
         "/images/projects/coufun-2.jpg",
         "/images/projects/coufun-3.jpg"
       ],
-      "videoUrl": null,
-      "liveDemo": null,
+      "videoUrl": "https://www.metaversedev.kr/gallery_2021/101%EB%B2%99%EC%BB%A4-TEAM-COUFUN-1",
+      "notion": "https://dobito.notion.site/COUFUN-1cb3955ad0094a20b465b6fc28a1aa43?source=copy_link",
       "githubUrl": "https://github.com/101Bunker",
       "highlights": [
         "Winner of National AR Competition in South Korea",
@@ -210,7 +209,7 @@
         "/images/projects/birth2death-2.jpg",
         "/images/projects/birth2death-3.jpg"
       ],
-      "videoUrl": "https://youtube.com/...",
+      "videoUrl": "https://youtu.be/4rUfr1F2gjo?si=6w-7GPp41LtnbzJM",
       "liveDemo": null,
       "githubUrl": "https://github.com/JO-HEEJIN/birth2death",
       "highlights": [
@@ -263,7 +262,7 @@
       "longDescription": "Modern web platform enabling creators to build and share interactive storytelling experiences. Features real-time collaboration, rich media embedding, analytics, and monetization tools. Built with Next.js 14 and optimized for performance.",
       "category": "WEB",
       "tags": ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
-      "year": 2024,
+      "year": 2025,
       "thumbnail": "/images/projects/getn-show-thumb.jpg",
       "images": [
         "/images/projects/getn-show-1.jpg",
@@ -271,7 +270,7 @@
         "/images/projects/getn-show-3.jpg"
       ],
       "videoUrl": null,
-      "liveDemo": "https://www.getn.show",
+      "liveDemo": "https://www.getn.show/",
       "githubUrl": null,
       "highlights": [
         "Real-time collaborative editing",
