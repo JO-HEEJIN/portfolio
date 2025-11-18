@@ -18,12 +18,14 @@ function AnimatedSphere() {
   return (
     <Sphere ref={meshRef} args={[1, 100, 200]} scale={2.5}>
       <MeshDistortMaterial
-        color="#4F46E5"
+        color="#6366F1"
+        emissive="#8B5CF6"
+        emissiveIntensity={0.5}
         attach="material"
-        distort={0.3}
+        distort={0.4}
         speed={1.5}
-        roughness={0.2}
-        metalness={0.8}
+        roughness={0.1}
+        metalness={0.9}
       />
     </Sphere>
   );
@@ -58,7 +60,7 @@ function Particles() {
           count={particlesPosition.length / 3}
         />
       </bufferGeometry>
-      <pointsMaterial size={0.015} color="#8B5CF6" sizeAttenuation transparent opacity={0.8} />
+      <pointsMaterial size={0.02} color="#C084FC" sizeAttenuation transparent opacity={0.9} />
     </points>
   );
 }
@@ -70,9 +72,11 @@ export function ThreeJSCanvas() {
         camera={{ position: [0, 0, 5], fov: 75 }}
         className="bg-transparent"
       >
-        <ambientLight intensity={0.5} />
-        <pointLight position={[10, 10, 10]} intensity={1} />
-        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#8B5CF6" />
+        <ambientLight intensity={0.8} />
+        <pointLight position={[10, 10, 10]} intensity={2} color="#60A5FA" />
+        <pointLight position={[-10, -10, -10]} intensity={1.5} color="#A78BFA" />
+        <pointLight position={[0, 10, 0]} intensity={1.2} color="#EC4899" />
+        <spotLight position={[5, 5, 5]} intensity={1.5} angle={0.3} penumbra={1} color="#818CF8" />
         <AnimatedSphere />
         <Particles />
         <OrbitControls
