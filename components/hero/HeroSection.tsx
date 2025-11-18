@@ -14,7 +14,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-purple-900/20" />
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-100/40 via-purple-50/30 to-pink-50/40 dark:from-indigo-950 dark:via-purple-950 dark:to-violet-950" />
 
       {/* 3D Canvas */}
       <div className="absolute inset-0 opacity-50">
@@ -46,7 +46,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto"
+            className="text-xl md:text-2xl text-gray-900 dark:text-gray-100 max-w-3xl mx-auto"
           >
             Building immersive AR/VR experiences and AI-powered applications
             that bridge the gap between technology and human creativity
