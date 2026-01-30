@@ -96,9 +96,10 @@ export const JOURNEY = [
   },
   {
     period: "2024-Present",
-    title: "Birth2Death",
-    subtitle: "Founded",
+    title: "Birth2Death LLC",
+    subtitle: "Founded (Wyoming LLC)",
     description: "Where it all came together",
+    documentUrl: "/documents/birth2death-llc.pdf",
   },
 ] as const;
 
