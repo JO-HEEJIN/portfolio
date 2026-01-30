@@ -1,7 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
 import projectsData from "@/data/projects.json";
 
 const CATEGORY_COLORS: Record<string, string> = {
@@ -21,6 +23,126 @@ const CATEGORY_LABELS: Record<string, string> = {
   BLOCKCHAIN: "Blockchain",
   DESIGN: "Design",
 };
+
+function ImageGallery({ images, title }: { images: string[]; title: string }) {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const openLightbox = (image: string, index: number) => {
+    setSelectedImage(image);
+    setCurrentIndex(index);
+  };
+
+  const closeLightbox = () => setSelectedImage(null);
+
+  const nextImage = () => {
+    const next = (currentIndex + 1) % images.length;
+    setCurrentIndex(next);
+    setSelectedImage(images[next]);
+  };
+
+  const prevImage = () => {
+    const prev = (currentIndex - 1 + images.length) % images.length;
+    setCurrentIndex(prev);
+    setSelectedImage(images[prev]);
+  };
+
+  return (
+    <>
+      {/* Thumbnail Grid */}
+      <div className="mt-4 pt-4 border-t border-gray-200 dark:border-zinc-800">
+        <p className="text-xs text-gray-500 dark:text-gray-500 mb-2">Gallery:</p>
+        <div className="flex gap-2 overflow-x-auto">
+          {images.map((image, index) => (
+            <button
+              key={index}
+              onClick={() => openLightbox(image, index)}
+              className="relative w-16 h-16 flex-shrink-0 rounded-lg overflow-hidden border-2 border-transparent hover:border-violet-500 transition-colors"
+            >
+              <Image
+                src={image}
+                alt={`${title} screenshot ${index + 1}`}
+                fill
+                className="object-cover"
+                sizes="64px"
+              />
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Lightbox Modal */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+            onClick={closeLightbox}
+          >
+            {/* Close button */}
+            <button
+              onClick={closeLightbox}
+              className="absolute top-4 right-4 p-2 text-white/70 hover:text-white transition-colors"
+            >
+              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            {/* Previous button */}
+            {images.length > 1 && (
+              <button
+                onClick={(e) => { e.stopPropagation(); prevImage(); }}
+                className="absolute left-4 p-2 text-white/70 hover:text-white transition-colors"
+              >
+                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+            )}
+
+            {/* Image */}
+            <motion.div
+              key={selectedImage}
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="relative max-w-5xl max-h-[80vh] w-full h-full"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Image
+                src={selectedImage}
+                alt={title}
+                fill
+                className="object-contain"
+                sizes="(max-width: 1280px) 100vw, 1280px"
+              />
+            </motion.div>
+
+            {/* Next button */}
+            {images.length > 1 && (
+              <button
+                onClick={(e) => { e.stopPropagation(); nextImage(); }}
+                className="absolute right-4 p-2 text-white/70 hover:text-white transition-colors"
+              >
+                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            )}
+
+            {/* Counter */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/70 text-sm">
+              {currentIndex + 1} / {images.length}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}
 
 export default function ProjectsPage() {
   const { projects } = projectsData;
@@ -62,6 +184,19 @@ export default function ProjectsPage() {
               transition={{ duration: 0.6, delay: index * 0.05 }}
               className="bg-white dark:bg-zinc-900 rounded-xl border border-gray-200 dark:border-zinc-800 overflow-hidden hover:border-violet-500 dark:hover:border-violet-500 transition-all group"
             >
+              {/* Thumbnail Image */}
+              {project.thumbnail && (
+                <div className="relative w-full h-40 bg-gray-100 dark:bg-zinc-800">
+                  <Image
+                    src={project.thumbnail}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              )}
+
               {/* Category Badge */}
               <div className="p-4 pb-0">
                 <span
@@ -161,6 +296,11 @@ export default function ProjectsPage() {
                       ))}
                     </div>
                   </div>
+                )}
+
+                {/* Image Gallery - only for projects with images */}
+                {project.images && project.images.length > 0 && (
+                  <ImageGallery images={project.images} title={project.title} />
                 )}
               </div>
             </motion.div>
