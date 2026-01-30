@@ -589,6 +589,177 @@
           "unit": "/100"
         }
       ]
+    },
+    {
+      "id": "neverforget",
+      "title": "NeverForget",
+      "subtitle": "AI Memory Assistant with Infinite Context",
+      "description": "iOS AI assistant that never forgets - powered by Long Context + Prompt Caching architecture",
+      "longDescription": "NeverForget is an iOS AI memory assistant built on the promise of 'AI that never forgets'. Instead of using traditional RAG (which can miss relevant context), it implements Long Context architecture that passes the entire conversation history to Claude, combined with Anthropic's Prompt Caching for 90% cost reduction. The app also integrates Gemini Vision for fast image analysis.",
+      "category": "AI_ML",
+      "tags": ["Swift", "iOS", "Claude API", "Prompt Caching", "Gemini", "PostgreSQL"],
+      "year": 2024,
+      "thumbnail": "/images/projects/neverforget-thumb.jpg",
+      "images": [],
+      "videoUrl": null,
+      "liveDemo": null,
+      "githubUrl": "https://github.com/JO-HEEJIN/NeverForget",
+      "highlights": [
+        "Long Context architecture - 100% context retention, no search failures",
+        "Claude Prompt Caching - 90% API cost reduction",
+        "Gemini 2.0 Flash for fast image analysis (26s → 2s)",
+        "96-99% cache hit rate in production",
+        "Privacy-first design with secure token handling",
+        "Architected for future Azure self-hosted LLM with real CAG"
+      ],
+      "techStack": [
+        {
+          "name": "Swift",
+          "icon": "swift",
+          "url": "https://swift.org"
+        },
+        {
+          "name": "Claude API",
+          "icon": "anthropic",
+          "url": "https://anthropic.com"
+        },
+        {
+          "name": "Gemini",
+          "icon": "google",
+          "url": "https://ai.google.dev"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql",
+          "url": "https://postgresql.org"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Cache Hit Rate",
+          "value": "96-99",
+          "unit": "%"
+        },
+        {
+          "label": "Cost Reduction",
+          "value": "90",
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "id": "nvidia-devtech-portfolio",
+      "title": "NVIDIA DevTech Portfolio",
+      "subtitle": "GPU Computing & AI Optimization Projects",
+      "description": "Comprehensive portfolio for NVIDIA DevTech internship - TensorRT, CUDA, Triton Inference Server",
+      "longDescription": "A collection of 8 portfolio projects demonstrating expertise in NVIDIA GPU computing technologies. Includes TensorRT optimization with layer fusion and precision calibration, CUDA matrix multiplication, YOLOv8 deployment, Triton Inference Server multi-model serving, INT8 quantization, and healthcare VLM deployment for medical imaging.",
+      "category": "AI_ML",
+      "tags": ["CUDA", "TensorRT", "Triton", "PyTorch", "ONNX", "GPU Computing"],
+      "year": 2025,
+      "thumbnail": "/images/projects/nvidia-thumb.jpg",
+      "images": [],
+      "videoUrl": null,
+      "liveDemo": "https://www.kaggle.com/code/dubito/pytorch-to-tensorrt-optimization",
+      "githubUrl": "https://github.com/JO-HEEJIN/nvidia-devtech-portfolio",
+      "highlights": [
+        "TensorRT optimization with layer fusion and precision calibration",
+        "CUDA matrix multiplication demonstrating parallel computing",
+        "YOLOv8 TensorRT deployment for real-time inference",
+        "Triton Inference Server with dynamic batching",
+        "INT8 quantization with minimal accuracy loss",
+        "Healthcare VLM deployment for medical imaging"
+      ],
+      "techStack": [
+        {
+          "name": "CUDA",
+          "icon": "nvidia",
+          "url": "https://developer.nvidia.com/cuda-toolkit"
+        },
+        {
+          "name": "TensorRT",
+          "icon": "nvidia",
+          "url": "https://developer.nvidia.com/tensorrt"
+        },
+        {
+          "name": "PyTorch",
+          "icon": "pytorch",
+          "url": "https://pytorch.org"
+        },
+        {
+          "name": "Triton",
+          "icon": "nvidia",
+          "url": "https://developer.nvidia.com/nvidia-triton-inference-server"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Portfolio Projects",
+          "value": "8",
+          "unit": ""
+        },
+        {
+          "label": "Focus Areas",
+          "value": "GPU",
+          "unit": "Optimization"
+        }
+      ]
+    },
+    {
+      "id": "life-navigator",
+      "title": "Life Navigator",
+      "subtitle": "Personal AI Productivity Assistant",
+      "description": "NASA-inspired architecture for personal productivity optimization using Google APIs",
+      "longDescription": "Life Navigator applies NASA's Farm Navigators 4-layer data-driven architecture to personal productivity. Just as Farm Navigators uses satellite data (SMAP, MODIS, Landsat) for soil health analysis, Life Navigator uses personal APIs (Gmail, Calendar) for stress and schedule analysis. Features serverless Vercel functions, Redis token storage, and AI-powered life optimization recommendations.",
+      "category": "AI_ML",
+      "tags": ["Node.js", "Google APIs", "Vercel", "OAuth 2.0", "Redis", "Serverless"],
+      "year": 2024,
+      "thumbnail": "/images/projects/life-navigator-thumb.jpg",
+      "images": [],
+      "videoUrl": null,
+      "liveDemo": "https://life-navigator-ten.vercel.app",
+      "githubUrl": "https://github.com/JO-HEEJIN/life-navigator",
+      "highlights": [
+        "NASA Farm Navigators architecture pattern applied to personal productivity",
+        "Real-time Gmail stress analysis and Calendar health tracking",
+        "Google OAuth 2.0 with secure token handling",
+        "Vercel Edge Functions for global performance",
+        "Upstash Redis for OAuth token persistence",
+        "AI-powered personalized recommendations"
+      ],
+      "techStack": [
+        {
+          "name": "Node.js",
+          "icon": "nodejs",
+          "url": "https://nodejs.org"
+        },
+        {
+          "name": "Google APIs",
+          "icon": "google",
+          "url": "https://developers.google.com/apis-explorer"
+        },
+        {
+          "name": "Vercel",
+          "icon": "vercel",
+          "url": "https://vercel.com"
+        },
+        {
+          "name": "Redis",
+          "icon": "redis",
+          "url": "https://redis.io"
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Architecture Layers",
+          "value": "4",
+          "unit": ""
+        },
+        {
+          "label": "APIs Integrated",
+          "value": "Gmail + Calendar",
+          "unit": ""
+        }
+      ]
     }
   ]
 }
