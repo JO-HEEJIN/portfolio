@@ -5,7 +5,7 @@ import { SITE_CONFIG } from "@/lib/constants";
 
 const contactCards = [
   {
-    label: "Email",
+    label: "Email (Personal)",
     value: "midmost44@gmail.com",
     href: "mailto:midmost44@gmail.com",
     icon: (
@@ -14,6 +14,17 @@ const contactCards = [
       </svg>
     ),
     color: "text-blue-400",
+  },
+  {
+    label: "Email (Business)",
+    value: "info@birth2death.com",
+    href: "mailto:info@birth2death.com",
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      </svg>
+    ),
+    color: "text-violet-400",
   },
   {
     label: "GitHub",

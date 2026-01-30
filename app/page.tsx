@@ -4,7 +4,6 @@ import { ProductsSection } from "@/components/sections/ProductsSection";
 import { DeepDivesSection } from "@/components/sections/DeepDivesSection";
 import { JourneySection } from "@/components/sections/JourneySection";
 import { MetricsSection } from "@/components/sections/MetricsSection";
-import { AwardsSection } from "@/components/sections/AwardsSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
       <DeepDivesSection />
       <MetricsSection />
       <JourneySection />
-      <AwardsSection />
       <ContactSection />
     </main>
   );
