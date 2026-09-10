@@ -170,7 +170,7 @@ export default function ProjectsPage() {
             All Projects
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            Recent work in applied AI and data infrastructure, alongside earlier healthcare, spatial computing, and design projects.
+            Recent work in AI and data infrastructure, alongside earlier healthcare, spatial computing, and design projects.
           </p>
         </motion.div>
 

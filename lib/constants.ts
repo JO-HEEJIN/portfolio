@@ -2,8 +2,8 @@ import projectsData from "@/data/projects.json";
 
 export const SITE_CONFIG = {
   name: "Heejin Jo",
-  title: "Applied AI Engineer & Founder",
-  description: "I build AI systems that hold up in production.",
+  title: "AI Engineer",
+  description: "I build AI that holds up in the real world.",
   url: "https://heejinjo.me",
   author: {
     name: "Heejin Jo",
@@ -27,11 +27,11 @@ export const FEATURED_PROJECTS = projectsData.projects.filter(
 );
 
 export const CAPABILITIES = [
-  { title: "Agent workflows", detail: "LangGraph state and routing, MCP tools, LangSmith tracing, explicit action boundaries." },
-  { title: "Retrieval systems", detail: "RAG, graph context, embeddings, Qdrant, Chroma, semantic caching, and source attribution." },
+  { title: "Production systems", detail: "Architecture, deployment, streaming, model routing, layered fallbacks, access control, Sentry, Docker, and CI/CD." },
   { title: "Evaluation", detail: "Repeated trials, human judgment, model-based graders, grader validation, and regression checks." },
   { title: "Backend & data", detail: "Python, Go, TypeScript, FastAPI, PostgreSQL / PostGIS, Redis, and custom ETL." },
-  { title: "Production operations", detail: "Streaming, model routing, layered fallbacks, access control, Sentry, Docker, and CI/CD." },
+  { title: "Retrieval systems", detail: "RAG, graph context, embeddings, Qdrant, Chroma, semantic caching, and source attribution." },
+  { title: "Agent workflows", detail: "LangGraph state and routing, MCP tools, LangSmith tracing, and explicit action boundaries." },
   { title: "Medical & vision systems", detail: "DICOM, OpenCV, 3D Slicer, DEIM-based detection, FHIR, and on-premise NLP systems." },
 ] as const;
 

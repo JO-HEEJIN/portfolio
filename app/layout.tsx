@@ -17,9 +17,9 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
-  title: "Heejin Jo | Applied AI Engineer & Founder",
+  title: "Heejin Jo | AI Engineer",
   description:
-    "Applied AI engineer building production systems, agent workflows, retrieval, and evaluations. Explore b2d_geo, Welda with LangGraph and LangSmith, and model-behavior research.",
+    "AI engineer building production systems, evaluation workflows, data infrastructure, and model-behavior research.",
   keywords: [
     "AI Engineer",
     "LLM",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Heejin Jo" }],
   openGraph: {
-    title: "Heejin Jo | Applied AI Engineer & Founder",
+    title: "Heejin Jo | AI Engineer",
     description:
-      "Production AI systems, agent workflows, provenance-aware data infrastructure, and model-behavior research.",
+      "Production AI systems, evaluation, data infrastructure, and model-behavior research.",
     url: "https://heejinjo.me",
     siteName: "Heejin Jo Portfolio",
     locale: "en_US",
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Heejin Jo | Applied AI Engineer & Founder",
+    title: "Heejin Jo | AI Engineer",
     description:
-      "Production AI systems, agent workflows, provenance-aware data infrastructure, and model-behavior research.",
+      "Production AI systems, evaluation, data infrastructure, and model-behavior research.",
   },
   robots: {
     index: true,

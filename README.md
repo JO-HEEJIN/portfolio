@@ -1,4 +1,4 @@
-# Heejin Jo — Applied AI Portfolio
+# Heejin Jo — AI Engineer Portfolio
 
 Personal portfolio at [heejinjo.me](https://heejinjo.me), built with Next.js, TypeScript, Tailwind CSS, and Framer Motion. The hero uses a small native WebGL aurora sphere with an immediate CSS fallback. Hosted on Vercel.
 
@@ -26,7 +26,7 @@ npm run build
 - `app/projects/page.tsx`: full project archive and image galleries.
 - `app/layout.tsx`: search and social metadata.
 
-Content is grounded in the supplied Applied AI resume and project implementation reviewed in September 2026. Project status distinguishes deployed work from independent prototypes. Documented data scale is approximate, research is labeled as arXiv preprints, and preliminary findings retain their limitations.
+Content is grounded in the supplied resume and project implementation reviewed in September 2026. Project status distinguishes deployed work from independent prototypes. Documented data scale is approximate, research is labeled as arXiv preprints, and preliminary findings retain their limitations.
 
 ## Deployment
 

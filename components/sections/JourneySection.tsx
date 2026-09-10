@@ -6,7 +6,7 @@ export function JourneySection() {
       <div className="max-w-6xl mx-auto">
         <div className="max-w-3xl mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-5">Experience</h2>
-          <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-400">My path spans interactive art, medical imaging, and applied AI. Working with physicians, customers, and technical teams taught me to turn ambiguous needs into systems people can use.</p>
+          <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-400">My path spans interactive art, medical imaging, and AI engineering. Working with physicians, customers, and technical teams taught me to turn ambiguous needs into systems people can use.</p>
         </div>
         <div className="space-y-8">
           {JOURNEY.map((item) => (

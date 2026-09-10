@@ -42,7 +42,7 @@ export function ContactSection() {
             Get In Touch
           </h2>
           <p className="text-gray-400 mb-12">
-            Let&apos;s talk about applied AI, agent systems, and reliable products.
+            Let&apos;s talk about AI systems, evaluation, and reliable products.
           </p>
 
           {/* Contact Card */}
