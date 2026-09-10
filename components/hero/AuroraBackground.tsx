@@ -22,9 +22,7 @@ const fragmentShader = `
 
     float radius = length(uv);
     float angle = atan(uv.y, uv.x);
-    float direction = u_progress <= 0.5
-      ? u_progress * 2.0
-      : (1.0 - u_progress) * 2.0;
+    float direction = 1.0 - abs(u_progress * 2.0 - 1.0);
 
     float pink = 0.5 + 0.5 * cos(angle - direction * 2.15 - 1.0);
     float cyan = 0.5 + 0.5 * cos(angle - direction * 1.8 + 1.55);
@@ -133,7 +131,7 @@ export function AuroraBackground() {
     const renderer = createBloomRenderer(canvas);
     if (!renderer) return;
 
-    const playbackRate = 40 / 120;
+    const playbackRate = 90 / 120;
     const applyPlaybackRate = () => {
       video.defaultPlaybackRate = playbackRate;
       video.playbackRate = playbackRate;
@@ -180,10 +178,10 @@ export function AuroraBackground() {
         muted
         playsInline
         preload="auto"
-        poster="/hero/me-apple-orb-poster.webp"
+        poster="/hero/apple2-poster.png"
         disablePictureInPicture
       >
-        <source src="/hero/me-apple-orb-pingpong.mp4" type="video/mp4" />
+        <source src="/hero/apple2-pingpong.mp4" type="video/mp4" />
       </video>
     </div>
   );

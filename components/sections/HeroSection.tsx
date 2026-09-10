@@ -10,7 +10,7 @@ export function HeroSection() {
       </div>
 
       <div className="hero-content">
-        <p className="hero-eyebrow">Heejin Jo <span aria-hidden="true">·</span> AI Engineer</p>
+        <p className="hero-eyebrow">Heejin Jo</p>
         <h1 className="hero-title">I build AI<br />that works.</h1>
         <p className="hero-intro">From architecture to production—and deeper when models fail.</p>
         <div className="hero-actions">
