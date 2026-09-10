@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { AuroraBackground } from "@/components/hero/AuroraBackground";
 
@@ -12,12 +9,7 @@ export function HeroSection() {
         <AuroraBackground />
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 14 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        className="hero-content"
-      >
+      <div className="hero-content">
         <p className="hero-eyebrow">Heejin Jo <span aria-hidden="true">·</span> AI Engineer</p>
         <h1 className="hero-title">I build AI<br />that works.</h1>
         <p className="hero-intro">From architecture to production—and deeper when models fail.</p>
@@ -25,7 +17,7 @@ export function HeroSection() {
           <Link href="#products" className="hero-primary-cta">Selected work <span aria-hidden="true">↘</span></Link>
           <Link href="#deep-dives" className="hero-secondary-cta">Research</Link>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }
