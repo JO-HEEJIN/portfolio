@@ -10,6 +10,7 @@ export function Navigation() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const overHero = pathname === "/" && !scrolled;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +40,7 @@ export function Navigation() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="text-lg font-semibold text-gray-900 dark:text-white">
+          <Link href="/" className={cn("text-lg font-semibold", overHero ? "text-white" : "text-gray-900 dark:text-white")}>
             Heejin Jo
           </Link>
 
@@ -49,7 +50,7 @@ export function Navigation() {
               <Link
                 key={item.href}
                 href={getHref(item.href)}
-                className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400 transition-colors relative group"
+                className={cn("text-sm font-medium hover:text-violet-400 transition-colors relative group", overHero ? "text-gray-200" : "text-gray-600 dark:text-gray-300")}
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-violet-600 dark:bg-violet-400 transition-all group-hover:w-full" />
@@ -59,9 +60,11 @@ export function Navigation() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-md text-gray-700 dark:text-gray-300"
+            className={cn("md:hidden p-2 rounded-md", overHero ? "text-white" : "text-gray-700 dark:text-gray-300")}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation"
           >
             <svg
               className="w-6 h-6"
@@ -84,7 +87,7 @@ export function Navigation() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-gray-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
+        <div id="mobile-navigation" className="md:hidden border-t border-gray-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
           <div className="px-4 py-3 space-y-1">
             {NAV_ITEMS.map((item) => (
               <Link

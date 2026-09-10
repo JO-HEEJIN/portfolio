@@ -170,7 +170,7 @@ export default function ProjectsPage() {
             All Projects
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            A collection of my work across AR/VR, AI/ML, Healthcare, and more.
+            Recent work in applied AI and data infrastructure, alongside earlier healthcare, spatial computing, and design projects.
           </p>
         </motion.div>
 
@@ -179,6 +179,7 @@ export default function ProjectsPage() {
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
+              id={project.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.05 }}
@@ -199,6 +200,7 @@ export default function ProjectsPage() {
 
               {/* Category Badge */}
               <div className="p-4 pb-0">
+                {project.status && <p className="text-sm text-violet-600 dark:text-violet-400 mb-2">{project.status}</p>}
                 <span
                   className={`inline-block px-2 py-1 text-xs font-medium rounded-full border ${
                     CATEGORY_COLORS[project.category] || "bg-gray-500/10 text-gray-400"
@@ -214,9 +216,15 @@ export default function ProjectsPage() {
                   {project.title}
                 </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-500 mb-2">{project.subtitle}</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
+                <p className="text-base text-gray-600 dark:text-gray-400 mb-4">
                   {project.description}
                 </p>
+                {project.featured && (
+                  <ul className="list-disc pl-5 mb-5 space-y-2 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                    {project.highlights.map((point) => <li key={point}>{point}</li>)}
+                  </ul>
+                )}
+                {project.note && <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400 mb-5">{project.note}</p>}
 
                 {/* Awards */}
                 {project.awards && project.awards.length > 0 && (
@@ -253,7 +261,7 @@ export default function ProjectsPage() {
                       rel="noopener noreferrer"
                       className="flex-1 px-3 py-1.5 bg-violet-600 hover:bg-violet-700 text-white text-xs font-medium rounded text-center transition-colors"
                     >
-                      Live Demo
+                      {project.id === "b2d-geo" ? "Live Map" : "Live Demo"}
                     </a>
                   )}
                   {project.githubUrl && (
@@ -263,7 +271,7 @@ export default function ProjectsPage() {
                       rel="noopener noreferrer"
                       className="flex-1 px-3 py-1.5 bg-gray-100 dark:bg-zinc-800 hover:bg-gray-200 dark:hover:bg-zinc-700 text-gray-700 dark:text-gray-300 text-xs font-medium rounded text-center transition-colors"
                     >
-                      GitHub
+                      {project.id === "b2d-geo" || project.id === "bridge-damage-detection" ? "Public Case Study" : "GitHub"}
                     </a>
                   )}
                   {project.videoUrl && (
@@ -277,6 +285,10 @@ export default function ProjectsPage() {
                     </a>
                   )}
                 </div>
+
+                {project.readingLinks && <div className="flex flex-wrap gap-x-4 gap-y-2 mt-4">
+                  {project.readingLinks.map((link) => <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="text-sm text-violet-600 dark:text-violet-400 hover:underline">{link.label}</a>)}
+                </div>}
 
                 {/* Press Links */}
                 {project.pressLinks && project.pressLinks.length > 0 && (

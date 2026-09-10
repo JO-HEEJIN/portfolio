@@ -1,5 +1,5 @@
 import { HeroSection } from "@/components/sections/HeroSection";
-import { WhyClaudeSection } from "@/components/sections/WhyClaudeSection";
+import { ApproachSection } from "@/components/sections/ApproachSection";
 import { ProductsSection } from "@/components/sections/ProductsSection";
 import { DeepDivesSection } from "@/components/sections/DeepDivesSection";
 import { JourneySection } from "@/components/sections/JourneySection";
@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
-      <WhyClaudeSection />
       <ProductsSection />
+      <ApproachSection />
       <DeepDivesSection />
       <MetricsSection />
       <JourneySection />

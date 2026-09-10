@@ -1,13 +1,291 @@
 {
   "projects": [
     {
+      "id": "b2d-geo",
+      "title": "b2d_geo",
+      "subtitle": "Public-data infrastructure for AI agents",
+      "description": "A production-deployed Korean geospatial platform that turns public address, parcel, zoning, and land-price data into structured evidence for applications and AI agents.",
+      "longDescription": "A production-deployed Korean geospatial platform that turns public address, parcel, zoning, and land-price data into structured evidence for applications and AI agents.",
+      "category": "AI_ML",
+      "tags": [
+        "Go",
+        "PostGIS",
+        "Python",
+        "MCP"
+      ],
+      "year": 2026,
+      "thumbnail": "",
+      "images": [],
+      "highlights": [
+        "Built deterministic ingestion and validation for a documented full-load snapshot of approximately 39.7M parcels and 222M parcel–zoning records, with source and dataset-version metadata in primary serving tables.",
+        "Exposed 15 REST routes and seven MCP tools over stdio or HTTP. Kept source facts and transparent calculations separate from model-generated estimates and professional judgment.",
+        "Designed request IDs, API-key access, IP and per-key rate limits, non-blocking usage metering, and optional Sentry monitoring. Shipped the API, ETL, MCP adapter, and web UI in one non-root container."
+      ],
+      "techStack": [
+        {
+          "name": "Go",
+          "icon": ""
+        },
+        {
+          "name": "PostGIS",
+          "icon": ""
+        },
+        {
+          "name": "Python",
+          "icon": ""
+        },
+        {
+          "name": "MCP",
+          "icon": ""
+        }
+      ],
+      "status": "Deployed system",
+      "githubUrl": "https://github.com/JO-HEEJIN/b2d_geo_public",
+      "featured": true,
+      "note": "Dated full-load records, July–August 2026; coverage varies by dataset. The public case study includes representative code, tests, schemas, and design decisions.",
+      "readingLinks": [
+        {
+          "label": "API docs",
+          "url": "https://api.birth2death.com/docs.html"
+        },
+        {
+          "label": "Architecture",
+          "url": "https://github.com/JO-HEEJIN/b2d_geo_public/blob/main/docs/architecture.md"
+        },
+        {
+          "label": "Engineering decisions",
+          "url": "https://github.com/JO-HEEJIN/b2d_geo_public/blob/main/docs/engineering-decisions.md"
+        },
+        {
+          "label": "Failure analysis",
+          "url": "https://github.com/JO-HEEJIN/b2d_geo_public/blob/main/docs/failure-analysis.md"
+        }
+      ],
+      "liveDemo": "https://api.birth2death.com/map.html"
+    },
+    {
+      "id": "welda",
+      "title": "Welda RAG Prototype",
+      "subtitle": "Stateful workflows & retrieval observability",
+      "description": "An independent Korean healthcare RAG prototype combining LangGraph orchestration, vector retrieval, Neo4j knowledge, and LangSmith tracing.",
+      "longDescription": "An independent Korean healthcare RAG prototype combining LangGraph orchestration, vector retrieval, Neo4j knowledge, and LangSmith tracing.",
+      "category": "AI_ML",
+      "tags": [
+        "LangGraph",
+        "LangSmith",
+        "Python",
+        "Chroma",
+        "Neo4j"
+      ],
+      "year": 2026,
+      "thumbnail": "",
+      "images": [],
+      "highlights": [
+        "Built explicit shared state, conditional intent routing, five lifecycle stages, and separate emergency and medical-referral paths in LangGraph.",
+        "Combined vector retrieval and graph context with web-search fallback, source attribution, and streamed responses; configured LangSmith run tracing.",
+        "Built a separate local evaluation harness comparing BGE-M3 and KURE-v1 on 15 labeled Korean queries using retrieval quality and latency metrics."
+      ],
+      "techStack": [
+        {
+          "name": "LangGraph",
+          "icon": ""
+        },
+        {
+          "name": "LangSmith",
+          "icon": ""
+        },
+        {
+          "name": "Python",
+          "icon": ""
+        },
+        {
+          "name": "Chroma",
+          "icon": ""
+        },
+        {
+          "name": "Neo4j",
+          "icon": ""
+        }
+      ],
+      "status": "Independent prototype",
+      "featured": true,
+      "note": "CLI prototype, May 2026. Evaluation used a small local dataset; this is not a clinically validated service.",
+      "githubUrl": "https://github.com/JO-HEEJIN/welda-rag-chatbot-prototype"
+    },
+    {
+      "id": "interviewmate",
+      "title": "InterviewMate",
+      "subtitle": "Real-time inference & evaluation",
+      "description": "A real-time AI interview copilot where I own architecture, deployment, evaluation, reliability, and incident resolution.",
+      "longDescription": "A real-time AI interview copilot where I own architecture, deployment, evaluation, reliability, and incident resolution.",
+      "category": "AI_ML",
+      "tags": [
+        "Python",
+        "Claude API",
+        "Deepgram",
+        "Qdrant",
+        "WebSocket"
+      ],
+      "year": 2026,
+      "thumbnail": "",
+      "images": [],
+      "highlights": [
+        "Built latency-sensitive streaming with retrieval, semantic caching, model routing, user context, and layered fallbacks.",
+        "Diagnosed WebSocket/WebRTC streaming and regional latency issues across the serving stack.",
+        "Turned a production reasoning failure into controlled prompt studies, grader validation, regression checks, and activation-level probing."
+      ],
+      "techStack": [
+        {
+          "name": "Python",
+          "icon": ""
+        },
+        {
+          "name": "Claude API",
+          "icon": ""
+        },
+        {
+          "name": "Deepgram",
+          "icon": ""
+        },
+        {
+          "name": "Qdrant",
+          "icon": ""
+        },
+        {
+          "name": "WebSocket",
+          "icon": ""
+        }
+      ],
+      "status": "Operated product",
+      "githubUrl": "https://github.com/JO-HEEJIN/interview_mate",
+      "featured": true,
+      "note": "Engineering and research links focus on the implementation and reproducible experiments."
+    },
+    {
+      "id": "taskflow-ai",
+      "title": "TaskFlow AI",
+      "subtitle": "AI task decomposition & study workflows",
+      "description": "An AI task-decomposition and study system shipped with document parsing, authentication, payments, and notifications.",
+      "longDescription": "An AI task-decomposition and study system shipped with document parsing, authentication, payments, and notifications.",
+      "category": "AI_ML",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Azure",
+        "Document parsing"
+      ],
+      "year": 2026,
+      "thumbnail": "",
+      "images": [],
+      "highlights": [
+        "Owned the application and Azure infrastructure from architecture through deployment.",
+        "Integrated study workflows, document processing, notifications, authentication, and payments.",
+        "Shipped production security hardening and zero-downtime deployment."
+      ],
+      "techStack": [
+        {
+          "name": "Next.js",
+          "icon": ""
+        },
+        {
+          "name": "TypeScript",
+          "icon": ""
+        },
+        {
+          "name": "Azure",
+          "icon": ""
+        },
+        {
+          "name": "Document parsing",
+          "icon": ""
+        }
+      ],
+      "status": "Shipped product",
+      "featured": true,
+      "note": "Focus: complete product delivery and operational reliability."
+    },
+    {
+      "id": "socratic-kernel",
+      "title": "Socratic Kernel",
+      "subtitle": "Voice-verified learning",
+      "description": "Turns textbook PDFs into oral exams. Masked concepts are revealed only after semantic verification that the learner explained the target concept.",
+      "longDescription": "Turns textbook PDFs into oral exams. Masked concepts are revealed only after semantic verification that the learner explained the target concept.",
+      "category": "AI_ML",
+      "tags": [
+        "Document parsing",
+        "Voice",
+        "Semantic verification"
+      ],
+      "year": 2026,
+      "thumbnail": "",
+      "images": [],
+      "highlights": [
+        "PDF-to-oral-exam workflow",
+        "Concept masking with semantic verification"
+      ],
+      "techStack": [
+        {
+          "name": "Document parsing",
+          "icon": ""
+        },
+        {
+          "name": "Voice",
+          "icon": ""
+        },
+        {
+          "name": "Semantic verification",
+          "icon": ""
+        }
+      ]
+    },
+    {
+      "id": "bridge-damage-detection",
+      "title": "Bridge-damage Detection",
+      "subtitle": "Class-aware evaluation under data imbalance",
+      "description": "An independent applied-ML study using a working dataset of 378,072 inspection images across nine damage classes. Per-class evaluation exposed gains and regressions hidden by aggregate mAP.",
+      "longDescription": "Compared DEIMv2-M detector experiments with a fixed validation set, examining class imbalance alongside licensing, hardware, latency, and deployment constraints. The results motivated narrower, class-aware experiments.",
+      "category": "AI_ML",
+      "tags": [
+        "DEIMv2",
+        "Computer vision",
+        "Per-class evaluation",
+        "PyTorch"
+      ],
+      "year": 2026,
+      "thumbnail": "",
+      "images": [],
+      "highlights": [
+        "Kept validation fixed while varying training composition.",
+        "Used per-class AP alongside aggregate mAP to identify trade-offs."
+      ],
+      "techStack": [
+        {
+          "name": "DEIMv2",
+          "icon": ""
+        },
+        {
+          "name": "PyTorch",
+          "icon": "pytorch"
+        }
+      ],
+      "status": "Applied-ML study",
+      "githubUrl": "https://github.com/JO-HEEJIN/b2d_geo_public/blob/main/docs/bridge-damage-detection.md",
+      "note": "Independent of the geospatial serving system. Results are from limited training experiments and do not establish production readiness."
+    },
+    {
       "id": "birth2death",
       "title": "Birth2Death",
       "subtitle": "ADHD Life Management with Gamification",
       "description": "iOS app helping ADHD users manage life through gamification and AI coaching",
       "longDescription": "Comprehensive life management platform designed specifically for individuals with ADHD. Features include task gamification with collectible characters, AI-powered habit coaching, time-boxing with gentle reminders, and progress visualization. Built with SwiftUI and integrated with GPT-4 for personalized guidance.",
       "category": "HEALTHCARE",
-      "tags": ["SwiftUI", "iOS", "HealthKit", "GPT-4", "Gamification"],
+      "tags": [
+        "SwiftUI",
+        "iOS",
+        "HealthKit",
+        "GPT-4",
+        "Gamification"
+      ],
       "year": 2024,
       "thumbnail": "/images/projects/birth2death-thumb.jpg",
       "images": [
@@ -46,18 +324,6 @@
           "icon": "openai",
           "url": "https://openai.com"
         }
-      ],
-      "metrics": [
-        {
-          "label": "Task Completion Rate",
-          "value": "78",
-          "unit": "%"
-        },
-        {
-          "label": "User Engagement",
-          "value": "4.7",
-          "unit": "/5"
-        }
       ]
     },
     {
@@ -65,9 +331,16 @@
       "title": "KisanAIAR",
       "subtitle": "Dual-Platform AR & AI Agricultural Assistant",
       "description": "Mobile AR + Desktop game platform with AI-powered crop management for precision agriculture",
-      "longDescription": "KisanAI is a comprehensive dual-platform agricultural solution combining mobile AR/AI capabilities with desktop gaming and data analysis. Mobile platform features real-world AR visualization, AI-powered disease detection, and ChatGPT integration for farming advice. Desktop platform offers interactive farming simulation games and advanced data analytics dashboard. Winner of NASA Space Apps Challenge 2025, serving 5000+ farmers with multilingual support.",
+      "longDescription": "An agricultural prototype combining mobile AR crop visualization, AI-assisted farming information, and a desktop simulation and analytics interface.",
       "category": "AR_VR",
-      "tags": ["React Native", "Unity", "TensorFlow", "AR", "ChatGPT", "Game Dev"],
+      "tags": [
+        "React Native",
+        "Unity",
+        "TensorFlow",
+        "AR",
+        "ChatGPT",
+        "Game Dev"
+      ],
       "year": 2025,
       "thumbnail": "/images/projects/kisan-ai-thumb.jpg",
       "images": [
@@ -79,14 +352,9 @@
       "liveDemo": "https://kisan-ai-one.vercel.app/",
       "githubUrl": "https://github.com/JO-HEEJIN/kisanai",
       "highlights": [
-        "Winner of NASA Space Apps Challenge 2025",
-        "Dual-Platform: Mobile AR/AI + Desktop Game/Analytics",
-        "Mobile: Real-world AR overlay for crop health visualization",
-        "Mobile: AI-powered disease detection with 93% accuracy",
-        "Mobile: Integration with OpenAI GPT-4 for farming advice",
-        "Desktop: Interactive farming simulation game",
-        "Desktop: Advanced data analytics dashboard",
-        "Weather-based yield predictions with satellite data"
+        "Mobile AR crop visualization",
+        "AI-assisted farming information",
+        "Desktop farming simulation and analytics"
       ],
       "techStack": [
         {
@@ -120,28 +388,22 @@
           "url": "https://api.nasa.gov"
         }
       ],
-      "metrics": [
-        {
-          "label": "Disease Detection Accuracy",
-          "value": "93",
-          "unit": "%"
-        },
-        {
-          "label": "Active Farmers",
-          "value": "5000",
-          "unit": "+"
-        }
-      ],
-      "awards": ["NASA Space Apps Challenge 2025 Winner"]
+      "awards": []
     },
     {
       "id": "coufun-ar",
       "title": "Coufun AR App",
       "subtitle": "Augmented Reality Social Platform",
       "description": "AR-powered social platform for creating and sharing immersive experiences",
-      "longDescription": "Coufun is an innovative AR social platform that enables users to create, share, and experience augmented reality content in real-world environments. Winner of a national competition in South Korea, the app features location-based AR content, social sharing capabilities, and interactive AR filters. Built with Unity and ARCore/ARKit for cross-platform compatibility.",
+      "longDescription": "An AR social platform for creating and sharing location-based experiences, built with Unity and ARCore/ARKit.",
       "category": "AR_VR",
-      "tags": ["Unity", "ARCore", "ARKit", "C#", "Mobile AR"],
+      "tags": [
+        "Unity",
+        "ARCore",
+        "ARKit",
+        "C#",
+        "Mobile AR"
+      ],
       "year": 2023,
       "thumbnail": "/images/projects/coufun-thumb.jpg",
       "images": [
@@ -154,12 +416,9 @@
       "notion": "https://dobito.notion.site/COUFUN-1cb3955ad0094a20b465b6fc28a1aa43?source=copy_link",
       "githubUrl": "https://github.com/101Bunker",
       "highlights": [
-        "Winner of National AR Competition in South Korea",
         "Location-based AR content creation and sharing",
-        "Real-time multi-user AR experiences",
         "Interactive AR filters and effects",
-        "Cross-platform support (iOS & Android)",
-        "Social feed with AR content discovery"
+        "Cross-platform development with Unity"
       ],
       "techStack": [
         {
@@ -183,28 +442,22 @@
           "url": "https://docs.microsoft.com/en-us/dotnet/csharp/"
         }
       ],
-      "metrics": [
-        {
-          "label": "Active Users",
-          "value": "15K",
-          "unit": "+"
-        },
-        {
-          "label": "AR Content Created",
-          "value": "50K",
-          "unit": "+"
-        }
-      ],
-      "awards": ["National AR Competition Winner - South Korea"]
+      "awards": []
     },
     {
       "id": "vision-pro-mars-trainer",
       "title": "Vision Pro Mars Trainer",
       "subtitle": "Immersive AR Training for NASA Space Apps Challenge",
       "description": "Interactive AR training simulator for Mars surface operations using Apple Vision Pro",
-      "longDescription": "Developed an immersive AR training application for NASA Space Apps Challenge 2025, enabling astronauts to practice Mars surface operations in mixed reality. The application combines real-time spatial mapping, hand tracking, and realistic physics simulation to create an authentic training environment.",
+      "longDescription": "An Apple Vision Pro prototype for exploring Mars surface training scenarios through spatial interfaces and interactive 3D content.",
       "category": "AR_VR",
-      "tags": ["SwiftUI", "RealityKit", "ARKit", "Vision Pro", "3D"],
+      "tags": [
+        "SwiftUI",
+        "RealityKit",
+        "ARKit",
+        "Vision Pro",
+        "3D"
+      ],
       "year": 2025,
       "thumbnail": "/images/projects/mars-trainer-2.png",
       "images": [
@@ -215,10 +468,8 @@
       "liveDemo": null,
       "githubUrl": null,
       "highlights": [
-        "Real-time spatial mapping and hand gesture recognition",
-        "Realistic Mars environment with accurate terrain data",
-        "Multi-user collaborative training sessions",
-        "Interactive 3D models with physics simulation"
+        "Spatial mapping and hand interaction",
+        "Interactive 3D training scenarios"
       ],
       "techStack": [
         {
@@ -241,18 +492,6 @@
           "icon": "arkit",
           "url": "https://developer.apple.com/arkit/"
         }
-      ],
-      "metrics": [
-        {
-          "label": "Training Accuracy",
-          "value": "95",
-          "unit": "%"
-        },
-        {
-          "label": "User Satisfaction",
-          "value": "4.8",
-          "unit": "/5"
-        }
       ]
     },
     {
@@ -260,9 +499,15 @@
       "title": "VENCLFIT (Watch Your Neck)",
       "subtitle": "AI-Powered Posture Tracking & Neck Health Management",
       "description": "Cervical spine health management service targeting 20-40 age group with real-time posture monitoring",
-      "longDescription": "VENCLFIT is an innovative healthcare solution addressing forward head posture (text neck syndrome) in younger demographics. The service combines real-time posture tracking, AI-powered analysis, and personalized health management to prevent and treat cervical spine issues caused by prolonged device usage. Winner of the Most Excellent Award at TEU MED 2기 medical innovation competition, earning 1.5 million won in prize money. The project emerged from a 7-week medical technology innovation program featuring startup toolkit training, team projects, and expert mentoring.",
+      "longDescription": "A cervical posture monitoring and health-management concept developed through a medical technology innovation program.",
       "category": "HEALTHCARE",
-      "tags": ["Healthcare", "AI", "Posture Detection", "Mobile Health", "Preventive Care"],
+      "tags": [
+        "Healthcare",
+        "AI",
+        "Posture Detection",
+        "Mobile Health",
+        "Preventive Care"
+      ],
       "year": 2022,
       "thumbnail": "/images/projects/venclfit-thumb.jpg",
       "images": [
@@ -279,12 +524,9 @@
       "notion": "https://dobito.notion.site/VENCLFIT-08eebc1fafe64bfb88224c8f5290ae85",
       "pitchDeck": "https://docs.google.com/presentation/d/1HPey25n-0IxShbo9FWkfGE0Y8YQTvOSdCwyRBBl3xDA/edit?usp=sharing",
       "highlights": [
-        "Most Excellent Award at TEU MED 2기 Competition (Prize: 1.5M won)",
-        "Real-time cervical spine posture tracking and monitoring",
-        "AI-powered analysis for forward head posture detection",
-        "Personalized health management plans for 20-40 age demographic",
-        "Preventive care solution for text neck syndrome",
-        "Featured in major Korean media: E-Daily, Digital Daily, Medigatenews"
+        "Posture tracking and visualization",
+        "Health-management interface design",
+        "Featured in Korean technology and medical media"
       ],
       "techStack": [
         {
@@ -308,19 +550,7 @@
           "url": "#"
         }
       ],
-      "metrics": [
-        {
-          "label": "Target Demographic",
-          "value": "20-40",
-          "unit": "세대"
-        },
-        {
-          "label": "Prize Money",
-          "value": "1.5M",
-          "unit": "원"
-        }
-      ],
-      "awards": ["TEU MED 2기 최우수상 (Most Excellent Award)"],
+      "awards": [],
       "pressLinks": [
         {
           "title": "E-Daily",
@@ -345,9 +575,15 @@
       "title": "Skin Burn AI Classification",
       "subtitle": "Medical AI for Burn Severity Assessment",
       "description": "Deep learning model for automated burn severity classification",
-      "longDescription": "Medical AI application using convolutional neural networks to classify burn severity from images. Assists healthcare professionals in rapid triage and treatment planning. Trained on diverse medical datasets with 96% classification accuracy.",
+      "longDescription": "A computer-vision project exploring burn severity classification from images. Awarded first place in the AI Skin Burn Diagnosis Challenge in 2022.",
       "category": "AI_ML",
-      "tags": ["Python", "TensorFlow", "Medical AI", "CNN", "Healthcare"],
+      "tags": [
+        "Python",
+        "TensorFlow",
+        "Medical AI",
+        "CNN",
+        "Healthcare"
+      ],
       "year": 2022,
       "thumbnail": "/images/projects/burn-ai-thumb.jpg",
       "images": [
@@ -359,11 +595,7 @@
       "liveDemo": null,
       "notionUrl": "https://dobito.notion.site/AI-cf9b0e1b19ce4ae390fd418671284eda?source=copy_link",
       "highlights": [
-        "1st Place Winner - National Medical AI Competition (South Korea)",
-        "96% classification accuracy for burn severity",
-        "Real-time inference on mobile devices",
-        "HIPAA-compliant data handling",
-        "Integration with hospital EHR systems",
+        "Convolutional neural networks for image classification",
         "Multi-class burn severity classification"
       ],
       "techStack": [
@@ -388,19 +620,9 @@
           "url": "https://flask.palletsprojects.com"
         }
       ],
-      "metrics": [
-        {
-          "label": "Classification Accuracy",
-          "value": "96",
-          "unit": "%"
-        },
-        {
-          "label": "Inference Time",
-          "value": "0.3",
-          "unit": "s"
-        }
-      ],
-      "awards": ["1st Place - National Medical AI Competition (South Korea)"]
+      "awards": [
+        "AI Skin Burn Diagnosis Challenge — 1st Place (2022)"
+      ]
     },
     {
       "id": "niaverse-funding",
@@ -409,7 +631,13 @@
       "description": "Web3-powered crowdfunding platform enabling transparent project funding with blockchain technology",
       "longDescription": "Niaverse is a decentralized funding platform built on blockchain technology, enabling creators to launch campaigns and receive funding transparently. Features include smart contract-based fund management, NFT rewards for backers, milestone-based fund release, and comprehensive project analytics. Built with modern web technologies and integrated with Ethereum blockchain.",
       "category": "BLOCKCHAIN",
-      "tags": ["Next.js", "Web3", "Ethereum", "Smart Contracts", "TypeScript"],
+      "tags": [
+        "Next.js",
+        "Web3",
+        "Ethereum",
+        "Smart Contracts",
+        "TypeScript"
+      ],
       "year": 2025,
       "thumbnail": "/images/projects/niaverse-thumb.jpg",
       "images": [
@@ -454,18 +682,6 @@
           "icon": "web3",
           "url": "https://web3js.org"
         }
-      ],
-      "metrics": [
-        {
-          "label": "Total Campaigns",
-          "value": "150",
-          "unit": "+"
-        },
-        {
-          "label": "Funds Raised",
-          "value": "$2M",
-          "unit": "+"
-        }
       ]
     },
     {
@@ -475,7 +691,14 @@
       "description": "Comprehensive UX design portfolio featuring brand identity, mobile UI/UX, and equity-focused design work",
       "longDescription": "A collection of design work emphasizing equity-focused and inclusive design principles. Completed Google UX Design Certificate (Coursera) and applied learnings to real-world projects including the UNDERDOG project for chronic pain patients. Design philosophy centers on 'solve for one, extend to many' - creating solutions that uplift historically underrepresented groups. Portfolio includes brand identity design (VENCLFIT, UNDERDOG, HEEJIN), mobile app UI/UX (KKUDUCK), and visual design work.",
       "category": "DESIGN",
-      "tags": ["UX Design", "UI Design", "Figma", "Brand Identity", "Inclusive Design", "Adobe Creative Suite"],
+      "tags": [
+        "UX Design",
+        "UI Design",
+        "Figma",
+        "Brand Identity",
+        "Inclusive Design",
+        "Adobe Creative Suite"
+      ],
       "year": 2021,
       "thumbnail": "/images/projects/ux-design-thumb.jpg",
       "images": [
@@ -518,19 +741,9 @@
           "url": "https://blender.org"
         }
       ],
-      "metrics": [
-        {
-          "label": "Design Projects",
-          "value": "15",
-          "unit": "+"
-        },
-        {
-          "label": "Brand Identities",
-          "value": "6",
-          "unit": ""
-        }
-      ],
-      "awards": ["Google UX Design Professional Certificate"]
+      "awards": [
+        "Google UX Design Professional Certificate"
+      ]
     },
     {
       "id": "getn-show",
@@ -539,7 +752,13 @@
       "description": "Platform for creating and sharing interactive web experiences",
       "longDescription": "Modern web platform enabling creators to build and share interactive storytelling experiences. Features real-time collaboration, rich media embedding, analytics, and monetization tools. Built with Next.js 14 and optimized for performance.",
       "category": "WEB",
-      "tags": ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind",
+        "Vercel"
+      ],
       "year": 2025,
       "thumbnail": "/images/projects/getn-show-thumb.jpg",
       "images": [
@@ -576,28 +795,23 @@
           "icon": "tailwind",
           "url": "https://tailwindcss.com"
         }
-      ],
-      "metrics": [
-        {
-          "label": "Page Load Time",
-          "value": "1.2",
-          "unit": "s"
-        },
-        {
-          "label": "Lighthouse Score",
-          "value": "98",
-          "unit": "/100"
-        }
       ]
     },
     {
       "id": "neverforget",
       "title": "NeverForget",
-      "subtitle": "AI Memory Assistant with Infinite Context",
-      "description": "iOS AI assistant that never forgets - powered by Long Context + Prompt Caching architecture",
-      "longDescription": "NeverForget is an iOS AI memory assistant built on the promise of 'AI that never forgets'. Instead of using traditional RAG (which can miss relevant context), it implements Long Context architecture that passes the entire conversation history to Claude, combined with Anthropic's Prompt Caching for 90% cost reduction. The app also integrates Gemini Vision for fast image analysis.",
+      "subtitle": "Long-context AI memory prototype",
+      "description": "iOS AI memory assistant exploring long-context conversations and prompt caching",
+      "longDescription": "An iOS prototype exploring long-context conversations, Claude prompt caching, and Gemini image analysis.",
       "category": "AI_ML",
-      "tags": ["Swift", "iOS", "Claude API", "Prompt Caching", "Gemini", "PostgreSQL"],
+      "tags": [
+        "Swift",
+        "iOS",
+        "Claude API",
+        "Prompt Caching",
+        "Gemini",
+        "PostgreSQL"
+      ],
       "year": 2024,
       "thumbnail": "/images/projects/neverforget-thumb.png",
       "images": [],
@@ -605,12 +819,9 @@
       "liveDemo": null,
       "githubUrl": "https://github.com/JO-HEEJIN/NeverForget",
       "highlights": [
-        "Long Context architecture - 100% context retention, no search failures",
-        "Claude Prompt Caching - 90% API cost reduction",
-        "Gemini 2.0 Flash for fast image analysis (26s → 2s)",
-        "96-99% cache hit rate in production",
-        "Privacy-first design with secure token handling",
-        "Architected for future Azure self-hosted LLM with real CAG"
+        "Long-context conversation handling",
+        "Prompt caching",
+        "Image analysis with Gemini"
       ],
       "techStack": [
         {
@@ -633,28 +844,23 @@
           "icon": "postgresql",
           "url": "https://postgresql.org"
         }
-      ],
-      "metrics": [
-        {
-          "label": "Cache Hit Rate",
-          "value": "96-99",
-          "unit": "%"
-        },
-        {
-          "label": "Cost Reduction",
-          "value": "90",
-          "unit": "%"
-        }
       ]
     },
     {
       "id": "nvidia-devtech-portfolio",
-      "title": "NVIDIA DevTech Portfolio",
-      "subtitle": "GPU Computing & AI Optimization Projects",
-      "description": "Comprehensive portfolio for NVIDIA DevTech internship - TensorRT, CUDA, Triton Inference Server",
-      "longDescription": "A collection of 8 portfolio projects demonstrating expertise in NVIDIA GPU computing technologies. Includes TensorRT optimization with layer fusion and precision calibration, CUDA matrix multiplication, YOLOv8 deployment, Triton Inference Server multi-model serving, INT8 quantization, and healthcare VLM deployment for medical imaging.",
+      "title": "GPU Inference Experiments",
+      "subtitle": "TensorRT, CUDA & Model Serving",
+      "description": "Experiments in inference optimization, GPU computing, and model serving with NVIDIA tools",
+      "longDescription": "A collection of experiments with TensorRT, CUDA matrix multiplication, Triton Inference Server, quantization, and computer-vision deployment.",
       "category": "AI_ML",
-      "tags": ["CUDA", "TensorRT", "Triton", "PyTorch", "ONNX", "GPU Computing"],
+      "tags": [
+        "CUDA",
+        "TensorRT",
+        "Triton",
+        "PyTorch",
+        "ONNX",
+        "GPU Computing"
+      ],
       "year": 2025,
       "thumbnail": "/images/projects/nvidia-thumb.png",
       "images": [],
@@ -690,18 +896,6 @@
           "icon": "nvidia",
           "url": "https://developer.nvidia.com/nvidia-triton-inference-server"
         }
-      ],
-      "metrics": [
-        {
-          "label": "Portfolio Projects",
-          "value": "8",
-          "unit": ""
-        },
-        {
-          "label": "Focus Areas",
-          "value": "GPU",
-          "unit": "Optimization"
-        }
       ]
     },
     {
@@ -711,7 +905,14 @@
       "description": "NASA-inspired architecture for personal productivity optimization using Google APIs",
       "longDescription": "Life Navigator applies NASA's Farm Navigators 4-layer data-driven architecture to personal productivity. Just as Farm Navigators uses satellite data (SMAP, MODIS, Landsat) for soil health analysis, Life Navigator uses personal APIs (Gmail, Calendar) for stress and schedule analysis. Features serverless Vercel functions, Redis token storage, and AI-powered life optimization recommendations.",
       "category": "AI_ML",
-      "tags": ["Node.js", "Google APIs", "Vercel", "OAuth 2.0", "Redis", "Serverless"],
+      "tags": [
+        "Node.js",
+        "Google APIs",
+        "Vercel",
+        "OAuth 2.0",
+        "Redis",
+        "Serverless"
+      ],
       "year": 2024,
       "thumbnail": "/images/projects/life-navigator-thumb.png",
       "images": [],
@@ -746,18 +947,6 @@
           "name": "Redis",
           "icon": "redis",
           "url": "https://redis.io"
-        }
-      ],
-      "metrics": [
-        {
-          "label": "Architecture Layers",
-          "value": "4",
-          "unit": ""
-        },
-        {
-          "label": "APIs Integrated",
-          "value": "Gmail + Calendar",
-          "unit": ""
         }
       ]
     }

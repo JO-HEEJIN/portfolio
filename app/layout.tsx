@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
+import { SITE_CONFIG } from "@/lib/constants";
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -15,14 +16,18 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Heejin Jo | I build AI products that ship",
+  metadataBase: new URL(SITE_CONFIG.url),
+  title: "Heejin Jo | Applied AI Engineer & Founder",
   description:
-    "Technical Founder with production LLM experience. Building TaskFlow AI and InterviewMate. 92.6% API cost reduction through model routing. Healthcare AI with Claude.",
+    "Applied AI engineer building production systems, agent workflows, retrieval, and evaluations. Explore b2d_geo, Welda with LangGraph and LangSmith, and model-behavior research.",
   keywords: [
     "AI Engineer",
     "LLM",
-    "Claude",
-    "Anthropic",
+    "LangGraph",
+    "LangSmith",
+    "MCP",
+    "Evaluation",
+    "PostGIS",
     "Healthcare AI",
     "Technical Founder",
     "Production AI",
@@ -31,9 +36,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Heejin Jo" }],
   openGraph: {
-    title: "Heejin Jo | I build AI products that ship",
+    title: "Heejin Jo | Applied AI Engineer & Founder",
     description:
-      "Technical Founder with production LLM experience. Building TaskFlow AI and InterviewMate.",
+      "Production AI systems, agent workflows, provenance-aware data infrastructure, and model-behavior research.",
     url: "https://heejinjo.me",
     siteName: "Heejin Jo Portfolio",
     locale: "en_US",
@@ -41,9 +46,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Heejin Jo | I build AI products that ship",
+    title: "Heejin Jo | Applied AI Engineer & Founder",
     description:
-      "Technical Founder with production LLM experience. Building TaskFlow AI and InterviewMate.",
+      "Production AI systems, agent workflows, provenance-aware data infrastructure, and model-behavior research.",
   },
   robots: {
     index: true,
