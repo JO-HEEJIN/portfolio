@@ -10,7 +10,7 @@ export function Navigation() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const overHero = pathname === "/" && !scrolled;
+  const onHome = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,14 +33,16 @@ export function Navigation() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md border-b border-gray-200 dark:border-zinc-800"
+          ? onHome
+            ? "bg-[#050706]/90 backdrop-blur-md border-b border-white/10"
+            : "bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md border-b border-gray-200 dark:border-zinc-800"
           : "bg-transparent"
       )}
     >
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className={cn("text-lg font-semibold", overHero ? "text-white" : "text-gray-900 dark:text-white")}>
+          <Link href="/" className={cn("text-lg font-semibold", onHome ? "text-white" : "text-gray-900 dark:text-white")}>
             Heejin Jo
           </Link>
 
@@ -50,7 +52,7 @@ export function Navigation() {
               <Link
                 key={item.href}
                 href={getHref(item.href)}
-                className={cn("text-sm font-medium hover:text-violet-400 transition-colors relative group", overHero ? "text-gray-200" : "text-gray-600 dark:text-gray-300")}
+                className={cn("text-sm font-medium hover:text-violet-400 transition-colors relative group", onHome ? "text-gray-200" : "text-gray-600 dark:text-gray-300")}
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-violet-600 dark:bg-violet-400 transition-all group-hover:w-full" />
@@ -60,7 +62,7 @@ export function Navigation() {
 
           {/* Mobile menu button */}
           <button
-            className={cn("md:hidden p-2 rounded-md", overHero ? "text-white" : "text-gray-700 dark:text-gray-300")}
+            className={cn("md:hidden p-2 rounded-md", onHome ? "text-white" : "text-gray-700 dark:text-gray-300")}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
             aria-expanded={mobileMenuOpen}
@@ -87,13 +89,13 @@ export function Navigation() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div id="mobile-navigation" className="md:hidden border-t border-gray-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
+        <div id="mobile-navigation" className={cn("md:hidden border-t", onHome ? "border-white/10 bg-[#070a09]" : "border-gray-200 dark:border-zinc-800 bg-white dark:bg-zinc-900")}>
           <div className="px-4 py-3 space-y-1">
             {NAV_ITEMS.map((item) => (
               <Link
                 key={item.href}
                 href={getHref(item.href)}
-                className="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-violet-600 dark:hover:text-violet-400"
+                className={cn("block px-3 py-2 text-base font-medium hover:text-violet-400", onHome ? "text-gray-200" : "text-gray-700 dark:text-gray-300")}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.label}

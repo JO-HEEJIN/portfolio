@@ -4,10 +4,10 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-gray-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
+    <footer className="border-t border-white/10 bg-[#050706]">
       <div className="max-w-6xl mx-auto px-6 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-600 dark:text-gray-400">
+          <p className="text-sm text-gray-500">
             {currentYear} {SITE_CONFIG.name}. Built with Next.js.
           </p>
 
@@ -16,7 +16,7 @@ export function Footer() {
               href={SITE_CONFIG.author.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
+              className="text-gray-500 hover:text-[#76e4d5] transition-colors"
               aria-label="GitHub"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -31,7 +31,7 @@ export function Footer() {
               href={SITE_CONFIG.author.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
+              className="text-gray-500 hover:text-[#76e4d5] transition-colors"
               aria-label="LinkedIn"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

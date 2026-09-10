@@ -1,52 +1,132 @@
 "use client";
 
-import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
-import { FEATURED_PROJECTS } from "@/lib/constants";
+import { motion } from "framer-motion";
+
+const systemFlow = ["Live audio", "Streaming STT", "Context + retrieval", "Model routing", "Response"];
+const productFlow = ["Documents", "Task decomposition", "Study workflow", "Notifications"];
+
+function Flow({ items }: { items: string[] }) {
+  return (
+    <div className="system-flow" role="img" aria-label={items.join(" to ")}>
+      {items.map((item, index) => (
+        <div className="system-flow-step" key={item}>
+          <span>{item}</span>
+          {index < items.length - 1 && <b aria-hidden="true">→</b>}
+        </div>
+      ))}
+    </div>
+  );
+}
 
 export function ProductsSection() {
   return (
-    <section id="products" className="py-24 px-6">
-      <div className="max-w-6xl mx-auto">
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12 max-w-3xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Selected work</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400">Data infrastructure, agent workflows, and products I have built and operated.</p>
-        </motion.div>
-        <div className="grid md:grid-cols-2 gap-8">
-          {FEATURED_PROJECTS.map((project, index) => (
-            <motion.article
-              key={project.id}
-              initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="flex flex-col bg-white dark:bg-zinc-800 rounded-2xl border border-gray-200 dark:border-zinc-700 p-6 sm:p-8"
-            >
-              <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{project.title}</h3>
-                {project.status && <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-violet-100 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300">{project.status}</span>}
-              </div>
-              <p className="text-sm font-medium text-violet-600 dark:text-violet-400 mb-4">{project.subtitle}</p>
-              <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-5">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mb-6">
-                {project.tags.map((tech) => <span key={tech} className="px-3 py-1 text-sm bg-gray-100 dark:bg-zinc-700 text-gray-700 dark:text-gray-300 rounded-full">{tech}</span>)}
-              </div>
-              <ul className="list-disc pl-5 space-y-3 text-base leading-relaxed text-gray-600 dark:text-gray-300 mb-6 marker:text-violet-500">
-                {project.highlights.map((point) => <li key={point}>{point}</li>)}
-              </ul>
-              <div className="mt-auto pt-5 border-t border-gray-200 dark:border-zinc-700">
-                {project.note && <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400 mb-4">{project.note}</p>}
-                <div className="flex flex-wrap gap-5">
-                  {project.githubUrl && <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-violet-600 dark:text-violet-400 hover:underline">{project.id === "b2d-geo" ? "Explore the public case study" : "View code"} <span aria-hidden="true">↗</span></a>}
-                  {project.liveDemo && <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-violet-600 dark:text-violet-400 hover:underline">Try the live map <span aria-hidden="true">↗</span></a>}
-                  {project.id === "interviewmate" && <Link href="#deep-dives" className="text-sm font-semibold text-violet-600 dark:text-violet-400 hover:underline">Read the research <span aria-hidden="true">↓</span></Link>}
-                </div>
-                {project.readingLinks && <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4">
-                  {project.readingLinks.map((link) => <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 dark:text-gray-400 hover:text-violet-600 dark:hover:text-violet-400 underline underline-offset-4">{link.label}</a>)}
-                </div>}
-              </div>
-            </motion.article>
-          ))}
-        </div>
-        <Link href="/projects" className="inline-flex mt-10 text-base font-semibold text-violet-600 dark:text-violet-400 hover:underline">Explore all projects <span aria-hidden="true" className="ml-2">→</span></Link>
+    <section id="products" className="systems-section">
+      <div className="systems-shell">
+        <motion.header
+          className="systems-heading"
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <p className="systems-kicker">Selected work</p>
+          <h2>Systems I built and operated.</h2>
+          <div className="keyword-line" aria-label="Core areas">
+            <span>Production infrastructure</span>
+            <span>Real-time AI</span>
+            <span>Model evaluation</span>
+          </div>
+        </motion.header>
+
+        <motion.article
+          className="system-card system-card-featured"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+        >
+          <div className="system-card-topline">
+            <div>
+              <p className="systems-kicker">01 · Deployed data infrastructure</p>
+              <h3>b2d_geo</h3>
+            </div>
+            <div className="system-links">
+              <a href="https://github.com/JO-HEEJIN/b2d_geo_public" target="_blank" rel="noopener noreferrer">Case study ↗</a>
+              <a href="https://api.birth2death.com/map.html" target="_blank" rel="noopener noreferrer">Live map ↗</a>
+            </div>
+          </div>
+
+          <figure className="architecture-figure">
+            <Image
+              src="/images/b2d-geo-architecture.png"
+              alt="b2d_geo architecture: Korean public data flows through ETL into PostGIS, a Go REST API, MCP tools, and client applications."
+              width={2190}
+              height={1542}
+              sizes="(max-width: 800px) 900px, 1152px"
+            />
+          </figure>
+
+          <div className="system-stats" aria-label="b2d_geo scale">
+            <div><strong>39.7M</strong><span>parcels</span></div>
+            <div><strong>222M</strong><span>zoning records</span></div>
+            <div><strong>15 + 7</strong><span>REST routes · MCP tools</span></div>
+            <div><strong>Go · PostGIS</strong><span>production stack</span></div>
+          </div>
+        </motion.article>
+
+        <motion.article
+          className="system-card system-card-interview"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+        >
+          <div className="system-card-topline">
+            <div>
+              <p className="systems-kicker">02 · Live production · ~70 users</p>
+              <h3>InterviewMate</h3>
+            </div>
+            <div className="system-links">
+              <a href="https://interviewmate.tech/" target="_blank" rel="noopener noreferrer">Live product ↗</a>
+              <a href="https://github.com/JO-HEEJIN/interview_mate" target="_blank" rel="noopener noreferrer">Code ↗</a>
+              <Link href="#deep-dives">Research ↓</Link>
+            </div>
+          </div>
+
+          <div className="diagram-panel">
+            <p className="diagram-label">Real-time inference path</p>
+            <Flow items={systemFlow} />
+            <div className="diagram-tech">
+              <span>WebSocket</span><span>Deepgram</span><span>Qdrant</span><span>Claude API</span><span>Fallback routing</span>
+            </div>
+          </div>
+
+          <div className="research-path" role="img" aria-label="A production failure led to controlled studies and activation probing">
+            <span>Production failure</span><b aria-hidden="true">→</b><span>Controlled studies</span><b aria-hidden="true">→</b><span>Activation probing</span>
+          </div>
+        </motion.article>
+
+        <motion.article
+          className="system-card system-card-compact system-card-taskflow"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+        >
+          <div className="system-card-topline">
+            <div>
+              <p className="systems-kicker">03 · Shipped product</p>
+              <h3>TaskFlow AI</h3>
+            </div>
+            <div className="keyword-line keyword-line-small">
+              <a href="https://youtu.be/qbt1-FH1qtw?si=_478xcvTFMr2fndD" target="_blank" rel="noopener noreferrer">Demo video ↗</a>
+              <span>Azure</span><span>Zero-downtime</span>
+            </div>
+          </div>
+          <div className="diagram-panel diagram-panel-compact">
+            <Flow items={productFlow} />
+          </div>
+        </motion.article>
+
+        <Link href="/projects" className="systems-more">All projects <span aria-hidden="true">→</span></Link>
       </div>
     </section>
   );

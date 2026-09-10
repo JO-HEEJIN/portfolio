@@ -1,38 +1,53 @@
 import { AWARDS, JOURNEY } from "@/lib/constants";
 
+const journeyKeywords: Record<string, string[]> = {
+  InterviewMate: ["Real-time AI", "Evaluation", "Research"],
+  "Birth2Death LLC": ["Founder", "AI products", "Data infrastructure"],
+  "Lime Friends": ["On-premise NLP", "Healthcare", "Privacy"],
+  SKIA: ["Medical imaging", "Computer vision", "XR"],
+};
+
 export function JourneySection() {
   return (
-    <section id="journey" className="py-24 px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="max-w-3xl mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-5">Experience</h2>
-          <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-400">My path spans interactive art, medical imaging, and AI engineering. Working with physicians, customers, and technical teams taught me to turn ambiguous needs into systems people can use.</p>
+    <section id="journey" className="atlas-section journey-section">
+      <div className="atlas-shell">
+        <div className="atlas-heading">
+          <p className="systems-kicker">Experience</p>
+          <h2>Art → medicine → AI systems.</h2>
         </div>
-        <div className="space-y-8">
+
+        <div className="journey-rail">
           {JOURNEY.map((item) => (
-            <article key={item.title} className="grid md:grid-cols-[220px_1fr] gap-3 md:gap-8 border-t border-gray-200 dark:border-zinc-700 pt-8">
-              <p className="text-sm font-medium text-violet-600 dark:text-violet-400">{item.period}</p>
+            <article key={item.title} className="journey-stop">
+              <span className="journey-dot" aria-hidden="true" />
+              <p>{item.period}</p>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">{item.title}</h3>
-                <p className="text-base text-gray-700 dark:text-gray-300 mt-1">{item.subtitle}</p>
-                <p className="text-base leading-relaxed text-gray-600 dark:text-gray-400 mt-3 max-w-3xl">{item.description}</p>
+                <h3>{item.title}</h3>
+                <small>{item.subtitle}</small>
+              </div>
+              <div className="journey-keywords">
+                {journeyKeywords[item.title]?.map((keyword) => <span key={keyword}>{keyword}</span>)}
               </div>
             </article>
           ))}
         </div>
-        <div className="grid md:grid-cols-2 gap-12 mt-16 pt-10 border-t border-gray-200 dark:border-zinc-700">
+
+        <div className="credentials-grid">
           <div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">Education & selected admission</h3>
-            <p className="font-medium text-gray-900 dark:text-white">Seoul Institute of the Arts</p>
-            <p className="text-base text-gray-600 dark:text-gray-400 mt-1">Digital Art / Interactive Art; Sound Design · 2015–2020</p>
-            <p className="font-medium text-gray-900 dark:text-white mt-6">St. George&apos;s University School of Medicine</p>
-            <p className="text-base text-gray-600 dark:text-gray-400 mt-1">Admitted to the Doctor of Medicine (MD) program</p>
+            <p className="systems-kicker">Education</p>
+            <strong>Seoul Institute of the Arts</strong>
+            <span>Digital Art · Sound Design</span>
+            <strong>St. George&apos;s University</strong>
+            <span>Admitted · MD program</span>
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">Selected awards</h3>
-            <ul className="space-y-4">
-              {AWARDS.map((award) => <li key={award.title}><p className="text-base font-medium text-gray-900 dark:text-white">{award.title}</p><p className="text-sm text-gray-600 dark:text-gray-400 mt-1">{award.place} · {award.year}</p></li>)}
-            </ul>
+            <p className="systems-kicker">Selected awards</p>
+            {AWARDS.map((award) => (
+              <div className="award-row" key={award.title}>
+                <span>{award.title}</span>
+                <strong>{award.place} · {award.year}</strong>
+              </div>
+            ))}
           </div>
         </div>
       </div>
