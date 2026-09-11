@@ -11,8 +11,11 @@ export function HeroSection() {
 
       <div className="hero-content">
         <p className="hero-eyebrow">Heejin Jo</p>
-        <h1 className="hero-title">I build AI<br />that works.</h1>
-        <p className="hero-intro">From architecture to production—and deeper when models fail.</p>
+        <h1 className="hero-title">
+          <span className="hero-title-line">Reliable AI starts</span>
+          <span className="hero-title-line">where benchmarks end.</span>
+        </h1>
+        <p className="hero-intro">I build and evaluate AI systems under real production constraints.</p>
         <div className="hero-actions">
           <Link href="#products" className="hero-primary-cta">Selected work <span aria-hidden="true">↘</span></Link>
           <Link href="#deep-dives" className="hero-secondary-cta">Research</Link>

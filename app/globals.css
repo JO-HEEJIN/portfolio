@@ -88,11 +88,16 @@ section[id], article[id] {
 }
 
 .hero-title {
-  font-size: clamp(4rem, 9.4vw, 8.2rem);
-  line-height: 0.84;
-  letter-spacing: -0.072em;
+  font-size: clamp(3rem, 4.6vw, 4.3rem);
+  line-height: 0.9;
+  letter-spacing: -0.062em;
   font-weight: 760;
   text-shadow: 0 3px 34px rgba(3,4,13,.85);
+}
+
+.hero-title-line {
+  display: block;
+  white-space: nowrap;
 }
 
 .hero-intro {
@@ -204,7 +209,7 @@ section[id], article[id] {
 
 @media (max-width: 640px) {
   .hero-section { padding: 6rem 1.25rem 2rem; }
-  .hero-title { font-size: clamp(3.65rem, 18vw, 5.1rem); }
+  .hero-title { font-size: clamp(1.75rem, 7.4vw, 3.1rem); }
   .hero-intro { max-width: 320px; font-size: .98rem; }
   .hero-actions { margin-top: 1.5rem; }
   .hero-visual { top: 47.5%; width: min(98vw, 430px); opacity: .9; }
