@@ -43,15 +43,6 @@ export function DeepDivesSection() {
             </a>
           ))}
         </div>
-
-        <a
-          href="https://github.com/JO-HEEJIN/interview_mate/tree/docs/car-wash-repro/car_wash/paper_4"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="systems-more"
-        >
-          Reproduction artifacts <span aria-hidden="true">↗</span>
-        </a>
       </div>
     </section>
   );

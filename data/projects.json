@@ -17,8 +17,8 @@
       "thumbnail": "",
       "images": [],
       "highlights": [
-        "Built deterministic ingestion and validation for a documented full-load snapshot of approximately 39.7M parcels and 222M parcel–zoning records, with source and dataset-version metadata in primary serving tables.",
-        "Exposed 15 REST routes and seven MCP tools over stdio or HTTP. Kept source facts and transparent calculations separate from model-generated estimates and professional judgment.",
+        "Built deterministic ingestion and validation for a documented full-load snapshot of approximately 39.7M parcels and 222M parcel land-use designation records, with source and dataset-version metadata in primary serving tables.",
+        "Exposed 15 REST routes and seven MCP tools over stdio or HTTP. The API returns government determinations verbatim and computes no derived scores.",
         "Designed request IDs, API-key access, IP and per-key rate limits, non-blocking usage metering, and optional Sentry monitoring. Shipped the API, ETL, MCP adapter, and web UI in one non-root container."
       ],
       "techStack": [
@@ -115,9 +115,9 @@
     {
       "id": "interviewmate",
       "title": "InterviewMate",
-      "subtitle": "Real-time inference & evaluation",
-      "description": "A real-time AI interview copilot where I own architecture, deployment, evaluation, reliability, and incident resolution.",
-      "longDescription": "A real-time AI interview copilot where I own architecture, deployment, evaluation, reliability, and incident resolution.",
+      "subtitle": "Real-time speech & retrieval for interview practice",
+      "description": "An interview preparation and mock-session app. I am the sole engineer: architecture, deployment, and production debugging.",
+      "longDescription": "An interview preparation and mock-session app. Spoken practice questions are transcribed in real time and answered with suggestions grounded in the user's own prepared context. I am the sole engineer: architecture, deployment, and production debugging.",
       "category": "AI_ML",
       "tags": [
         "Python",
@@ -130,9 +130,9 @@
       "thumbnail": "",
       "images": [],
       "highlights": [
-        "Built latency-sensitive streaming with retrieval, semantic caching, model routing, user context, and layered fallbacks.",
-        "Diagnosed WebSocket/WebRTC streaming and regional latency issues across the serving stack.",
-        "Turned a production reasoning failure into controlled prompt studies, grader validation, regression checks, and activation-level probing."
+        "Built the streaming path: browser audio over WebSocket, FFmpeg, Deepgram streaming STT, user-scoped Qdrant retrieval (up to three parallel sub-queries, 5 s timeout each), and Claude streaming.",
+        "Fixed a production bug where unrelated equal-length strings scored 0.95 similarity and returned the wrong prepared answer; raised the direct-return threshold from 0.70 to 0.85.",
+        "Turned an unexplained production answer into controlled prompt studies and, later, an open-weight replication with activation-oracle read-outs."
       ],
       "techStack": [
         {
@@ -157,7 +157,7 @@
         }
       ],
       "status": "Operated product",
-      "githubUrl": "https://github.com/JO-HEEJIN/interview_mate",
+      "liveDemo": "https://interviewmate.tech/engineering",
       "featured": true,
       "note": "Engineering and research links focus on the implementation and reproducible experiments."
     },
@@ -180,7 +180,7 @@
       "highlights": [
         "Owned the application and Azure infrastructure from architecture through deployment.",
         "Integrated study workflows, document processing, notifications, authentication, and payments.",
-        "Shipped production security hardening and zero-downtime deployment."
+        "Added Google ID-token verification, removed unauthenticated admin endpoints, and added redirect-aware SSRF protection for URL ingestion."
       ],
       "techStack": [
         {

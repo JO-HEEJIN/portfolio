@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const systemFlow = ["Live audio", "Streaming STT", "Context + retrieval", "Model routing", "Response"];
+const systemFlow = ["Practice audio", "Streaming STT", "Prepared-answer match", "User-scoped retrieval", "Streamed suggestion"];
 const productFlow = ["Documents", "Task decomposition", "Study workflow", "Notifications"];
 
 function Flow({ items }: { items: string[] }) {
@@ -68,7 +68,7 @@ export function ProductsSection() {
 
           <div className="system-stats" aria-label="b2d_geo scale">
             <div><strong>39.7M</strong><span>parcels</span></div>
-            <div><strong>222M</strong><span>zoning records</span></div>
+            <div><strong>222M</strong><span>land-use records</span></div>
             <div><strong>15 + 7</strong><span>REST routes · MCP tools</span></div>
             <div><strong>Go · PostGIS</strong><span>production stack</span></div>
           </div>
@@ -82,12 +82,12 @@ export function ProductsSection() {
         >
           <div className="system-card-topline">
             <div>
-              <p className="systems-kicker">02 · Live production · ~70 users</p>
+              <p className="systems-kicker">02 · Live product · interview preparation</p>
               <h3>InterviewMate</h3>
             </div>
             <div className="system-links">
               <a href="https://interviewmate.tech/" target="_blank" rel="noopener noreferrer">Live product ↗</a>
-              <a href="https://github.com/JO-HEEJIN/interview_mate" target="_blank" rel="noopener noreferrer">Code ↗</a>
+              <a href="https://interviewmate.tech/engineering" target="_blank" rel="noopener noreferrer">Engineering ↗</a>
               <Link href="#deep-dives">Research ↓</Link>
             </div>
           </div>
@@ -96,12 +96,12 @@ export function ProductsSection() {
             <p className="diagram-label">Real-time inference path</p>
             <Flow items={systemFlow} />
             <div className="diagram-tech">
-              <span>WebSocket</span><span>Deepgram</span><span>Qdrant</span><span>Claude API</span><span>Fallback routing</span>
+              <span>WebSocket</span><span>FFmpeg</span><span>Deepgram</span><span>Qdrant</span><span>Claude API</span>
             </div>
           </div>
 
-          <div className="research-path" role="img" aria-label="A production failure led to controlled studies and activation probing">
-            <span>Production failure</span><b aria-hidden="true">→</b><span>Controlled studies</span><b aria-hidden="true">→</b><span>Activation probing</span>
+          <div className="research-path" role="img" aria-label="A production answer led to controlled studies and activation probing">
+            <span>Production anomaly</span><b aria-hidden="true">→</b><span>Controlled studies</span><b aria-hidden="true">→</b><span>Activation probing</span>
           </div>
         </motion.article>
 
@@ -118,7 +118,7 @@ export function ProductsSection() {
             </div>
             <div className="keyword-line keyword-line-small">
               <a href="https://youtu.be/qbt1-FH1qtw?si=_478xcvTFMr2fndD" target="_blank" rel="noopener noreferrer">Demo video ↗</a>
-              <span>Azure</span><span>Zero-downtime</span>
+              <span>Azure</span><span>Next.js</span>
             </div>
           </div>
           <div className="diagram-panel diagram-panel-compact">

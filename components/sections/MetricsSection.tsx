@@ -13,7 +13,7 @@ const capabilityGroups = [
   },
   {
     title: "Backend & data",
-    items: ["Python", "Go", "TypeScript", "FastAPI", "PostgreSQL / PostGIS", "Redis", "ETL"],
+    items: ["Python", "Go", "TypeScript", "FastAPI", "PostgreSQL / PostGIS", "ETL"],
   },
   {
     title: "Retrieval & agents",
